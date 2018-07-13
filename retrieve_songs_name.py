@@ -13,7 +13,7 @@ def create_songs_list(songs_dir=SONGS_DIR):
         os.chdir(songs_dir)
         for song in glob.glob("*.mp3"):
             song = song.replace(".mp3", "")
-            re.sub('Góraleczka', '', song)
+            #re.sub('Góraleczka', '', song)
             splitted = re.split(r"\s*-\s*", song)
             print(song)
             if len(splitted) > 1:
