@@ -300,5 +300,8 @@ And you'll see this:
 * To create Ubiad bonfire songbook:
 ```
     cd chordbook
-    ./mksong -a --file-stem=śpiewnik-ognisko-ubiad-2019T --title="Śpiewnik - Ognisko Ubiad 2019"  ubiad-bonfire-songs/*.txt
+    ./mksong -a --file-stem=śpiewnik-ognisko-ubiad-2019 --title="Śpiewnik Ognisko Ubiad 2019"  ubiad-bonfire-songs/*.txt
 ```
+
+In case of any errors:
+https://html2pdf.com/pl/

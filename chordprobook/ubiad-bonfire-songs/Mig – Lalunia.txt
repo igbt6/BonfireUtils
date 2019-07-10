@@ -1,4 +1,4 @@
-{title: MIG - Lalunia}
+{title: Mig - Lalunia}
 #{st: MIG}
 
 

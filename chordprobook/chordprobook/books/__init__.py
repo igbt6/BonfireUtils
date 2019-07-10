@@ -529,7 +529,6 @@ class cp_song:
                 grid_md = ""
             song += "<div class='page'>%s %s <div class='song-page'><div class='song-text'>\n%s\n%s\n\n</div></div></div>" % ( title, grid_md, self.notes_md, page)
             page_count += 1
-
         song = """
 <div class='song'>
 %s
@@ -588,8 +587,8 @@ class cp_song_book:
         self.dir, self.filename = os.path.split(path)
 
     def sort_alpha(self):
-        self.songs.sort(key= lambda song: re.sub("(?i)^(the|a|\(.*?\)) ", "", song.title.lower()))
-        #self.songs.sort(key= lambda song: song.title.lower())
+        #self.songs.sort(key= lambda song: re.sub("(?i)^(the|a|\(.*?\)) ", "", song.title.lower()))
+        self.songs.sort(key= lambda song: song.title.lower())
 
 
     def to_md(self):
@@ -733,6 +732,14 @@ class cp_song_book:
         else: #Use a temp dir 
              temp_file = tempfile.NamedTemporaryFile(suffix=".html")
              html_path = temp_file.name
+        # Store HTML itself     
+        with open("html_songbook.html", 'w') as h:
+            h.write(html_book.format(all_songs,
+                                            title=title,
+                                            for_print = args['a4'],
+                                            contents=pypandoc.convert(self.contents,
+                                                                        "html",
+                                                                        format="md")))
 
         
         if args['html'] or args['pdf']:
@@ -749,6 +756,9 @@ class cp_song_book:
                 command = ['wkhtmltopdf', '-s','A4', '--enable-javascript', '--print-media-type', '--outline',
                            '--outline-depth', '1','--header-right', "[page]/[toPage]",
                            '--header-line', '--header-left', self.title, html_path, pdf_path]
+                # command = ['wkhtmltopdf', '-s','A4', '--outline',
+                #            '--outline-depth', '1','--header-right', "[page]/[toPage]",
+                #            '--header-line', '--header-left', self.title, html_path, pdf_path]
                 subprocess.call(command)
 
         if args['docx'] or args['odt'] or args['epub']:
@@ -1173,8 +1183,8 @@ p {
 </script>
 
 <style>
-.♂ {color: #0000FF; }
-.♀ {font-style: italic; color: #FF00FF;}
+.♂ {color: #000000; }
+.♀ {font-style: italic; color: #FFFFFF;}
 
 .♂ p, .♀ p {
     margin-top: 0;
@@ -1204,7 +1214,7 @@ blockquote.bridge {
 
 
 .page {
-width: 20cm;
+width: 21cm;
 height: 29cm;
 padding: 0cm;
 margin: 0cm;
@@ -1236,7 +1246,8 @@ margin: 0cm;
 border-style: solid;
 border-width: 1px;
 oflow: hidden;
-border-color: #FFFFF;
+border-color: #000000;
+
 page-break-inside: avoid;
 font-size: 26px;
 }

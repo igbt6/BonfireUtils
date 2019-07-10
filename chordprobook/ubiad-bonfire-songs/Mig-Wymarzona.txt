@@ -1,4 +1,4 @@
-{title: MIG - Wymarzona}
+{title: Mig - Wymarzona}
 #{st: MIG}
 
 

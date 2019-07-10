@@ -1,4 +1,4 @@
-{title: Sławomir - Miłość w Zakopanem}
+{title: Slawomir - Miłość w Zakopanem}
 #{st: Sławomir}
 
 

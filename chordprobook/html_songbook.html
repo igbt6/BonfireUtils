@@ -1,0 +1,3638 @@
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Śpiewnik Ognisko Ubiad 2019 </title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+
+function fill_page() {
+
+$("div.page").each(function() {
+ var page = $(this);
+ var page_width =page.width();
+ var song_page = page.children("div.song-page");
+ var text = song_page.children("div.song-text");
+ var grids = page.children("div.grids");
+
+ var heading = page.children("h1.song-title");
+
+
+ // Fit song title across top of page
+ if (heading.length > 0) {
+    heading.css('font-size', ("40px" ));
+    while (heading.width() > page.width()) {
+      heading.css('font-size', (parseInt(heading.css('font-size')) - 1) +"px" );
+    }
+ }
+
+  //Fit chord grids into page height
+ while (grids.height() > page.height()) {
+   img_height =  parseInt(page.find("div.grids img").css('height'));
+   if (img_height < 10) {break}
+   page.find("div.grids img").css('height', img_height - 5);
+ }
+
+
+ var heading_height = heading.height();
+ var height_remaining = page.height()  - heading_height;
+
+ var i = 0;
+
+ if (text.length > 0)
+ {
+   song_page.height( height_remaining);
+   // Make text smaller until it is just right
+   i = 0;
+   while( height_remaining * 1 < text.height()) {
+
+     text.css('font-size', (parseInt(text.css('font-size')) - 1) +"px" );
+      i++;
+
+       if (i > 100) {break}
+    }
+  //Hack - some songs were running off page
+  if (grids.height() > 10) {
+    text.css('font-size', (parseInt(text.css('font-size')) - 1) +"px" );
+  }
+ var title = text.children("h1.book-title");
+ i = 0;
+
+ if (title.length > 0) {
+
+
+    while (title.width() < page.width()) {
+
+          i++;
+          title.css('font-size', (parseInt(title.css('font-size')) + 1) +"px" );
+          if (i > 1000) {break}
+    }
+
+
+    while (title.height() > page.height() - 200) {
+          i++;
+
+          title.css('font-size', (parseInt(title.css('font-size')) - 10) + "px" );
+          if (i > 2000) {break}
+    }
+
+ }
+
+
+    //console.log(page.find("h1").html(), "PAGE HEIGHT TO MATCH", height_remaining, "CONTENTS HEIGHT", text.height(), "FONT SIZE", text.css('font-size') );
+  }
+});
+
+
+};
+$(function() {
+  fill_page()
+});
+
+</script>
+
+<style>
+.♂ {color: #000000; }
+.♀ {font-style: italic; color: #FFFFFF;}
+
+.♂ p, .♀ p {
+    margin-top: 0;
+}
+
+
+p:last-child {
+   margin-bottom: 0;
+}
+
+p, blockquote {
+     -webkit-margin-before: 0em;
+     -webkit-margin-after: .6em;
+}
+
+blockquote.chorus {
+  border-left: 5px solid #c00;
+  padding-left: 5px;
+  margin-left: 0em;
+}
+
+blockquote.bridge {
+  border-left: 5px dotted #00b;
+  padding-left: 5px;
+  margin-left: 0em;
+}
+
+
+.page {
+width: 21cm;
+height: 29cm;
+padding: 0cm;
+margin: 0cm;
+border-style: solid;
+border-width: 1px;
+border-color: #FFFFFF;
+page-break-inside: avoid;
+position: relative;
+}
+
+.grids {
+ font-size: 14pt;
+ font-weight: bold;
+ text-align: center;
+ float: right;
+}
+
+div.grids img {
+ border-style: solid;
+ border-width: 1px;
+ border-color: white;
+ height: 100;
+ width: auto;
+}
+
+div.song-page {
+padding: 0cm;
+margin: 0cm;
+border-style: solid;
+border-width: 1px;
+oflow: hidden;
+border-color: #000000;
+
+page-break-inside: avoid;
+font-size: 26px;
+}
+
+
+img {
+     padding: 0px 0px 0px 0px;
+     margin: 0px 0px 0px 0px;
+     -webkit-margin-before: 0px;
+     -webkit-margin-after: 0px;
+}
+
+h1.book-title {
+  white-space: normal;
+  text-align: center;
+  font-size: 1pt;
+  display: inline-block;
+}
+
+h1.song-title {
+     text-align: center;
+     padding: 0px 0px 0px 0px;
+     margin: 0px 0px 0px 0px;
+     white-space: nowrap;
+     display: inline-block;
+     -webkit-margin-before: 0px;
+     -webkit-margin-after: 0px;
+}
+div {
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: #FFFFFF;
+}
+@media print
+{
+    div.page{
+        page-break-inside: avoid;
+    }
+    div.song-page{
+
+        page-break-inside: avoid;
+    }
+}
+</style>
+</head>
+<body>
+
+
+<div class='song'>
+<div class='page'>
+<div class='song-page'>
+<div class='song-text'>
+<h1 class="book-title">Śpiewnik Ognisko Ubiad 2019 </h1>
+</div>
+</div>
+</div>
+</div>
+
+<div class="song">
+<div class="page">
+<div class="song-page">
+<div class="song-text">
+<p>Akcent - Czekam Na Ciebie <span style="float:right"> 4</span><br />
+Akcent - Granica <span style="float:right"> 5</span><br />
+Akcent - Oczarowałaś Mnie <span style="float:right"> 6</span><br />
+Akcent - Przez Twe oczy zielone <span style="float:right"> 7</span><br />
+Andre - Aleksandra <span style="float:right"> 8</span><br />
+Baciary - Całuj Mnie <span style="float:right"> 9</span><br />
+Baciary - Siedem Czerwonych Róż <span style="float:right"> 10</span><br />
+Baciary - Zostań tu ze mną na zawsze <span style="float:right"> 11</span><br />
+Baciary - Żyje się raz <span style="float:right"> 12</span><br />
+Backstreet Boys - As Long As You Love Me <span style="float:right"> 13</span><br />
+Backstreet Boys - Drowning <span style="float:right"> 14</span><br />
+Backstreet Boys - I want it that way <span style="float:right"> 15</span><br />
+Backstreet Boys - Shape Of My Heart <span style="float:right"> 16</span><br />
+Bajeranty - Zostań tu ze mną <span style="float:right"> 17</span><br />
+Bartek Wrona - Jedna na milion <span style="float:right"> 18</span><br />
+Bayera - Popłyniemy <span style="float:right"> 19</span><br />
+Bellamy Brothers - Let Your Love Flow <span style="float:right"> 20</span><br />
+Boys - Jesteś szalona <span style="float:right"> 21</span><br />
+Classic - Ja dla Ciebie Ty dla mnie <span style="float:right"> 22</span><br />
+Classic - Jeszcze dzień <span style="float:right"> 23</span><br />
+Classic - To nie przyjaźń tylko miłość <span style="float:right"> 24</span><br />
+Desert Rose Band - One Step Forward <span style="float:right"> 25</span><br />
+E.Górniak - Dumka Na Dwa Serca <span style="float:right"> 26</span><br />
+Fanatic - Czarownica <span style="float:right"> 27</span><br />
+Feel - A Gdy Jest Juz Ciemno <span style="float:right"> 28</span><br />
+Feel - Jak Anioła Głos <span style="float:right"> 29</span><br />
+Fisher i Mejk - Bo to miłość <span style="float:right"> 30</span><br />
+Formacja Nieżywych Schabuff - Lato <span style="float:right"> 31</span><br />
+Formacja Nieżywych Schabuff - Ławka <span style="float:right"> 32</span><br />
+Gesek - Najpiękniejsza <span style="float:right"> 33</span><br />
+Golec uOrkiestra - Lornetka <span style="float:right"> 34</span><br />
+Golec uOrkiestra - Słodycze <span style="float:right"> 35</span><br />
+Hedley - Perfect <span style="float:right"> 36</span><br />
+Hej z góry, z góry <span style="float:right"> 37</span><br />
+Ich Troje - A wszystko to bo Ciebie kocham <span style="float:right"> 38</span><br />
+Ich Troje - Powiedz <span style="float:right"> 39</span><br />
+Ich Troje - Zawsze Z Toba Chcialbym Byc <span style="float:right"> 40</span></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<div class="song-page">
+<div class="song-text">
+<p>Ivan&amp;Delfin - Jej Czarne Oczy <span style="float:right"> 41</span><br />
+John Waite - If You Ever Get Lonely <span style="float:right"> 42</span><br />
+K.A.S.A - Piękniejsza <span style="float:right"> 43</span><br />
+Kancelarya - Zabiorę Cię <span style="float:right"> 44</span><br />
+Kapela Górole - Wietrze wiej <span style="float:right"> 45</span><br />
+Krzysztof Krawczyk - Za Tobą pójdę jak na bal <span style="float:right"> 46</span><br />
+Lanco - Greatest Love Story <span style="float:right"> 47</span><br />
+Lobuzy - Łobuz kocha najbardziej <span style="float:right"> 48</span><br />
+Lombard - Przeżyj <span style="float:right"> 49</span><br />
+Long &amp; Junior - Kolorowa Sukienka <span style="float:right"> 50</span><br />
+Luka Rossi - A Ty bądź <span style="float:right"> 51</span><br />
+Magik Band - Góraleczka <span style="float:right"> 52</span><br />
+Maryla Rodowicz - Ale to już było <span style="float:right"> 53</span><br />
+Mavers - Ona ma to coś <span style="float:right"> 54</span><br />
+Mig - Będe przy Tobie <span style="float:right"> 55</span><br />
+Mig - Dziewczyna z sąsiedniej ulicy <span style="float:right"> 56</span><br />
+Mig - Krótka Historia <span style="float:right"> 57</span><br />
+Mig - Lalunia <span style="float:right"> 58</span><br />
+Mig - Wymarzona <span style="float:right"> 59</span><br />
+Milano - O Tobie kochana <span style="float:right"> 60</span><br />
+Paweł Gołecki - Zagrajmy, zaśpiewajmy <span style="float:right"> 61</span><br />
+Perfect - Kolysanka dla Nieznajomej <span style="float:right"> 62</span><br />
+Perfect - Nie płacz ewka <span style="float:right"> 63</span><br />
+Ronnie Dunn - Damn Drunk <span style="float:right"> 64</span><br />
+Seventeen - Niezwyczajna miłość <span style="float:right"> 65</span><br />
+Slawomir - Miłość w Zakopanem <span style="float:right"> 66</span><br />
+Stachurski - Czuje i wiem <span style="float:right"> 67</span><br />
+Stachurski - Gdy zapłaczesz <span style="float:right"> 68</span><br />
+Szła dzieweczka <span style="float:right"> 69</span><br />
+Top One - O miła moja <span style="float:right"> 70</span><br />
+Upływa szybko życie <span style="float:right"> 71</span><br />
+Verba - Bez Ciebie świat <span style="float:right"> 72</span><br />
+Verba - Mogliśmy <span style="float:right"> 73</span><br />
+Verba - Pokaż mi <span style="float:right"> 74</span><br />
+Westlife - I Lay My Love on You <span style="float:right"> 75</span><br />
+Westlife - If I Let You go <span style="float:right"> 76</span></p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+        
+
+
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Akcent - Czekam Na Ciebie
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=xYw487QFbuQ">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Sunshine, sunshine Reggae<br />
+Lato wokół nas<br />
+Czekam tu na ciebie<br />
+Uśmiech dla mnie masz.<br />
+Pozwól ciepłym wiatrom<br />
+Włosy rozwiać twe<br />
+Nie martw się miłością<br />
+Ona znajdzie cię.</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Daj muzyce kołysać cię<br />
+Płyń na fali, nie zmieniaj się<br />
+W górę ręce i biodra w ruch<br />
+Jeden obrót, dwa kroki w przód!<br />
+(x4)
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Sunshine, sunshine Reggae<br />
+Plaża wokół nas<br />
+Jeśli chcesz coś zmienić<br />
+Moje zdanie znasz<br />
+Pozwól ciepłym wiatrom<br />
+Włosy rozwiać twe<br />
+Nie martw się miłością<br />
+Ona znajdzie cię</li>
+</ol>
+<p><b>REF: x1</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Akcent - Granica
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=nqJy_sva8ms">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>O Tobie miła ciągle marzę,<br />
+O Tobie miła ciągle śnię.<br />
+Chciałbym całować usta Twoje,<br />
+I czule szeptać: &quot;Kocham Cię&quot;.</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Lecz wielka dzieli nas granica,<br />
+Boś Ty bogatą przecież jest,<br />
+Ja jestem tylko zwykłym grajkiem,<br />
+I jest mi w życiu bardzo źle.
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Bo gdybym ja był czarodziejem,<br />
+Dałbym Ci miła cały świat,<br />
+Lecz nim jestem moja miła,<br />
+I muszę obejść cały świat.</li>
+</ol>
+<p><b>REF: x1</b></p>
+<ol start="3" style="list-style-type: decimal">
+<li>Na niebie gwiazdka mówi mi,<br />
+Jak bardzo, bardzo chciałabyś,<br />
+Jedną gwiazdeczkę z nieba mieć,<br />
+Lecz nie realne to dziś jest.</li>
+</ol>
+<p><b>REF: x2</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Akcent - Oczarowałaś Mnie
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=t5sXKcadKJc">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Rzuciłaś znów przede mną tyle kart,<br />
+jedną z nich miałem być ja.</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Oczarowałaś mnie,<br />
+wciągnęłaś w życia grę,<br />
+damą karo byłaś Ty, obiecane sny.<br />
+Oczarowałaś mnie,<br />
+wciągnęłaś w życia grę,<br />
+damą karo byłaś Ty, obiecane na jawie sny.
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>W kalendarzu kartek brak,<br />
+a ty nadal jesteś ma.</li>
+</ol>
+<p><b>REF: x2</b></p>
+<ol start="3" style="list-style-type: decimal">
+<li>Stary zegar wybija czas,<br />
+aby miłość trwała w nas.</li>
+</ol>
+<p><b>REF: x2</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Akcent - Przez Twe oczy zielone
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=cxtnot8lY4U">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Odkąd zobaczyłem ciebie<br />
+Nie mogę jeść, nie mogę spać<br />
+Jak do tego doszło, nie wiem?<br />
+Miłość o sobie dała znać<br />
+Co poradzić mogę na to<br />
+Że miłość przyszła właśnie dziś<br />
+Że w sercu mym jest lato<br />
+A w moich myślach jesteś ty</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Przez twe oczy, te oczy zielone oszalałem<br />
+Gwiazdy chyba twym oczom oddały cały blask<br />
+A ja serce miłości spragnione ci oddałem<br />
+Tak zakochać, zakochać się można tylko raz
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>W mych ramionach Cię ukryję<br />
+U stóp Ci złożę cały świat<br />
+Serce me dla ciebie bije<br />
+I czeka na twój mały znak.<br />
+Jeden uśmiech twój wystarczy<br />
+I moje serce gubi rytm<br />
+O twą miłość będę walczył<br />
+O miłość walczyć to nie wstyd</li>
+</ol>
+<p><b>REF: x2</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Andre - Aleksandra
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=jAa4BOwHdRI">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Nagle w moim życiu pojawiła się<br />
+Piękna dziewczyna, to nie sen.<br />
+Mała, figlarna niczym cud,<br />
+Trafił mi się szczęścia łut.</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Ale ale Aleksandra,<br />
+Ale ale ale ładna,<br />
+Taka taka taka skromna,<br />
+Taka taka sexi bomba<br />
+(x3)
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Kto by pomyślał, że zakocham się,<br />
+Ona tak bardzo kręci mnie.<br />
+Cudna, seksowna mówię Wam,<br />
+Takie to szczęście teraz mam.</li>
+</ol>
+<p><b>REF: x3</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Baciary - Całuj Mnie
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=B7Dm_j2VsYM">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Błyszczą gwiazdy nad głowami<br />
+Chłopcy chodzą z dziewczynami<br />
+Nastolatki i weterani wszyscy chcą być kochani</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Kochaj mnie, kochaj mnie do rana<br />
+Kochaj mnie, a potem zmiana.<br />
+Całuj mnie, całuj mnie gorąco<br />
+Całuj mnie na stojąco, na leżąco.<br />
+Całuj mnie, całuj mnie do rana<br />
+Całuj mnie, a potem zmiana.<br />
+Kochaj mnie, kochaj mnie gorąco<br />
+Kochaj mnie na stojąco, na leżąco.
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Gdzie nie spojrzysz jakieś ruchy<br />
+Jakieś zjawy, jakieś duchy<br />
+Księżyc patrzy i nie wierzy<br />
+w koło pełno jest młodzieży</li>
+</ol>
+<p><b>REF: x1</b></p>
+<ol start="3" style="list-style-type: decimal">
+<li>Kiedy ruszam na podboje<br />
+Świat piękniejszy jest we dwoje<br />
+Nie stój tak więc uderz w gaz<br />
+Zrób to jeszcze chociaż raz</li>
+</ol>
+<p><b>REF: x2</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Baciary - Siedem Czerwonych Róż
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=nhcNLkosnz0">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Razu pewnego swojej dziewczynie<br />
+Oświadczyć chciałem się<br />
+Byłem zbyt młody, więc nie wiedziałem<br />
+Jak to powiedzieć jej.<br />
+Długo chodziłem, długo czekałem,<br />
+Zastanawiałem się,<br />
+Bukiet tych kwiatów<br />
+Tak pomyślałem i do niej udam się.</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Przynoszę Tobie moja dziewczyno<br />
+Siedem czerwonych róż,<br />
+Powiedz czy będziesz moją na zawsze już.<br />
+(x2)
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Dziewczę kwiatami się ucieszyło<br />
+I uśmiechnęło się,<br />
+Dziewczę na zawsze moją już było<br />
+I pokochało mnie.<br />
+Będziemy razem do końca życia,<br />
+Będziemy kochać się,<br />
+Jesteśmy szczęściem, moją miłością<br />
+O tobie tylko śnię.</li>
+</ol>
+<p><b>REF: x4</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Baciary - Zostań tu ze mną na zawsze
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=aibjSfOkZMY">Youtube link</a></p>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Zostań tu ze mną na zawsze. na zawsze.<br />
+Zostań nie odchodź już wiecej.<br />
+Miłość od nowa się zacznie, sie zacznie<br />
+I ucałuje twe ręce.<br />
+Zostań tu ze mną na zawsze. na zawsze.<br />
+Zostań nie odchodź już więcej.<br />
+Miłość od nowa się zacznie, sie zacznie.<br />
+I ucałuje twe ręce.
+</blockquote>
+<ol style="list-style-type: decimal">
+<li>Było nam razem tak pięknie.<br />
+Czemuż ten czas szybko mija.<br />
+Twe serce tak bardzo piękne<br />
+Znowu podałaś mi ręke.</li>
+</ol>
+<p><b>REF</b></p>
+<ol start="2" style="list-style-type: decimal">
+<li>Przeminął rok może wiecej.<br />
+Miłość do ciebie wciąż rosła.<br />
+Listów pisałam ci wiecej.<br />
+Pragnę byś znowu coś przyniosła.</li>
+</ol>
+<p><b>REF: x2</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Baciary - Żyje się raz
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=J-P81cf-fwE">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Każdy o tym<br />
+Dobrze wie, że samemu w życiu źle<br />
+Kochać chce i kochanym być<br />
+Bo żyje się raz<br />
+Miłość to jest<br />
+Dziwny stan, że choć rani leczy zaś<br />
+I bez niej żal każdego dnia<br />
+Bo żyje się raz</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Żyje się raz, spróbuj więc sam<br />
+Jak najlepiej wykorzystać swój czas<br />
+A więc kochaj ile się da<br />
+Bo żyje się raz<br />
+(x2)
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>I Ty o tym<br />
+Dobrze wiesz, gdy nie kochasz jest Ci źle<br />
+To jest prawda stara jak świat<br />
+Bo żyje się raz<br />
+Marzysz sobie<br />
+Kogoś kto będzie z Tobą w dzień i w noc<br />
+Wtedy ktoś odmieni Twój los<br />
+Bo żyje się raz</li>
+</ol>
+<p><b>REF: x2</b></p>
+<ol start="3" style="list-style-type: decimal">
+<li>Miłość każda<br />
+Jest jak lek na kłopoty i zmartwienie<br />
+Póki czas poznaj jej smak<br />
+Bo żyje się raz</li>
+</ol>
+<p><b>REF: x2</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Backstreet Boys - As Long As You Love Me
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=0Gl2QnHNpkA">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Although loneliness has always been a friend of mine<br />
+I'm leaving my life in your hands<br />
+People say I'm crazy and that I am blind<br />
+Risking it all in a glance<br />
+How you got me blind is still a mystery<br />
+I can't get you out of my head<br />
+Don't care what is written in you history<br />
+As long as you're here with me</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+I don't care who you are<br />
+Where you're from<br />
+What you did<br />
+As long as you love me<br />
+Who you are<br />
+Where you're from<br />
+Don't care what you did<br />
+As long as you love me
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Every little thing that you have said and done<br />
+Feels like it's deep within me<br />
+Doesn't really matter if you're on the run<br />
+It seems like we're meant to be<br />
+I've tried to hide it so that no one knows<br />
+But I guess it shows<br />
+When you look in to my eyes<br />
+What you did and where you're comin from<br />
+I don't care, as long as you love me, baby.</li>
+</ol>
+<p><b>REF: x2</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Backstreet Boys - Drowning
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=GZXHBgjQjNM">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Don't pretend you're sorry<br />
+I know you're not<br />
+You know you got the power<br />
+To make me weak inside<br />
+Girl, you leave me breathless<br />
+But it's okay<br />
+'Cause you are my survival<br />
+Now hear me say...<br />
+I can't imagine life without your love<br />
+And even forever don't seem like long enough</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Every time I breathe I take you in<br />
+And my heart beats again<br />
+Baby, I can't help it<br />
+Keep me drowning in your love<br />
+Every time I try to rise above<br />
+I'm swept away by love<br />
+Baby, I can't help it<br />
+Keep me drowning in your love
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Maybe I'm a drifter<br />
+Maybe not<br />
+'Cause I have known the safety<br />
+Of floating freely in your arms<br />
+I don't need another lifeline<br />
+It's not for me 'Cause only you can save me<br />
+Oh, can't you see.<br />
+I can't imagine life without your love<br />
+And even forever don't seem like long enough<br />
+(Don't seem like<br />
+long enough, yeah)</li>
+</ol>
+<p><b>REF: x1</b></p>
+<ol start="3" style="list-style-type: decimal">
+<li>Go on and pull me under<br />
+Cover me with dreams, yeah<br />
+Love me mouth-to-mouth now<br />
+You know I can't resist<br />
+'Cause you're the air that I breathe.</li>
+</ol>
+<p><b>REF: x1</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Backstreet Boys - I want it that way
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=4fndeDfaWCg">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>You are my fire<br />
+The one desire<br />
+Believe when I say<br />
+I want it that way<br />
+But we are two worlds apart<br />
+Can’t reach to your heart<br />
+When you say<br />
+That I want it that way</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Tell me why<br />
+Ain’t nothin’ but a heartache<br />
+Tell me why<br />
+Ain’t nothin’ but a mistake<br />
+Tell me why<br />
+I never wanna hear you say<br />
+I want it that way
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Am I your fire<br />
+Your one desire<br />
+Yes I know it’s too late<br />
+But I want it that way</li>
+</ol>
+<p><b>REF: x1</b></p>
+<ol start="3" style="list-style-type: decimal">
+<li>Now I can see that we’ve fallen apart<br />
+From the way that it used to be<br />
+Yeah<br />
+No matter the distance<br />
+I want you to know that<br />
+Deep down inside of me</li>
+</ol>
+<p><b>REF: x1</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Backstreet Boys - Shape Of My Heart
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=OT5msu-dap8">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Hmm, yeah, yeah<br />
+Baby, please try to forgive me<br />
+Stay here don't put out the glow<br />
+Hold me now don't bother if every minute it makes me weaker<br />
+You can save me from the man that I've become, oh yeah</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Lookin' back on the things I've done<br />
+I was tryin' to be someone<br />
+I played my part, kept you in the dark<br />
+Now let me show you the shape of my heart
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Sadness is beautiful, Loneliness that's tragical<br />
+So help me I can't win this war, oh no.<br />
+Touch me now don't bother if every second it makes me weaker<br />
+You can save me from the man I've become</li>
+</ol>
+<p><b>REF: x1</b></p>
+<ol start="3" style="list-style-type: decimal">
+<li><p>I'm here with my confesion<br />
+Got nothing to hide no more<br />
+I dont know where to start<br />
+But to show you the shape of my heart.</p></li>
+<li><p>I'm lookin' back on things I've done<br />
+I never wanna play the same old part<br />
+Or keep you in the dark<br />
+Now let me show you the shape of my heart</p></li>
+</ol>
+<p><b>REF: x1</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Bajeranty - Zostań tu ze mną
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=aibjSfOkZMY">Youtube link</a></p>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Zostań tu ze mną na zawsze, na zawsze,<br />
+zostań nie odchodź już wiecej,<br />
+Miłość od nowa się zacznie, się zacznie,<br />
+i ucałuje twe ręce<br />
+(x2)
+</blockquote>
+<ol style="list-style-type: decimal">
+<li>Było nam razem tak pięknie,<br />
+czemuż ten czas szybko mija,<br />
+twe serce tak bardzo mięknie,<br />
+znowu podałaś mi ręke...</li>
+</ol>
+<p><b>REF: x2</b></p>
+<ol start="2" style="list-style-type: decimal">
+<li>Przeminął rok, może wiecej,<br />
+miłość do ciebie wciąż rosła,<br />
+listów pisałem ci więcej,<br />
+pragnę byś znów coś przyniosła,.</li>
+</ol>
+<p><b>REF: x4</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Bartek Wrona - Jedna na milion
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=FJgIqLnZHw4">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Miłość szuka by odnaleźć Cię,<br />
+Miłość może dopaść nas każdego dnia.<br />
+Czekam więc, gdy znów pojawi się.<br />
+Znak, z nieba znak, że to dziś.</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Ty jedna na milion, na całe życie.<br />
+Ty jedna zwyciężysz, ty będziesz na szczycie.<br />
+Ty jedna na milion, na całe życie<br />
+Tej nocy zabłyśniesz i będziesz na szczycie.<br />
+(x2)
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Nie wiedziałem, że odnajdę Cię.<br />
+Każdy szuka kogoś, kto odmieni los.<br />
+Jak nadzieja, pojawiłaś się.<br />
+Świat, cały świat zmienił bieg.<br />
+Jesteś odpowiedzią na modlitwę mą.<br />
+Tą jedyną wyjątkową, wiem.<br />
+W mojej głowie pozostanie jeden sen.<br />
+Znak, z nieba znak, że to dziś.</li>
+</ol>
+<p><b>REF: x1</b></p>
+<ol start="3" style="list-style-type: decimal">
+<li>U twoich stóp to właśnie dziś leży cały świat<br />
+Tak ja wiem jest zawsze w tobie wielki czar<br />
+Jesteś najlepsza to twoja gra<br />
+Musisz wierzyć, że z miliona tylko ty<br />
+Dzisiaj wszystko ma inny smak.<br />
+U twoich stóp dzisiaj po prostu leży cały świat.<br />
+Tylko słowo bądź bo teraz możesz wiele dać.<br />
+To twój cel na zawsze będziesz trwać.</li>
+</ol>
+<p><b>REF: x2</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Bayera - Popłyniemy
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=l-a23vHe0p4">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Idziesz boso przez świat<br />
+piękna jak róży kwiat<br />
+śliczne włosy rozwiewa letni wiatr<br />
+dobrze wiem ze to ty<br />
+spełnisz wszystkie me sny<br />
+będziesz ze mną na zawsze<br />
+i..</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Spojrzę w twoje oczy<br />
+chyba mnie zaskoczysz<br />
+swoim pięknym ciałem<br />
+chyba oszalałem<br />
+będziesz mą królewną<br />
+wiem to już na pewno<br />
+popłyniemy razem w dal<br />
+ze mną ty, z tobą ja<br />
+Spojrzę w twoje oczy<br />
+chyba mnie zaskoczysz<br />
+swoim pięknym ciałem<br />
+chyba oszalałem<br />
+będziesz mą królewną<br />
+wiem to już na pewno<br />
+popłyniemy razem w dal<br />
+ze mną ty, z tobą ja<br />
+(x2)
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Morza szum, ja i ty<br />
+plaża a na niej my<br />
+tak nam słodko mijają wszystkie dni<br />
+to przy tobie dziś chce<br />
+być na dobre i złe<br />
+z tobą witać kolejny dzień.</li>
+</ol>
+<p><b>REF: x2</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Bellamy Brothers - Let Your Love Flow
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=J4Bl_VQ2inM">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>There's a reason for the sun shiny sky<br />
+And there's a reason why I'm feelin' so high<br />
+Must be the season<br />
+When that love light shines all around us<br />
+So let that feelin' grab you deep inside<br />
+And send you reelin' where your love can't hide<br />
+And then go stealin'<br />
+Through the summer nights with your lover</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Just let your love flow like a mountain stream<br />
+And let your love grow with the smallest of dreams<br />
+And let your love show<br />
+And you'll know what I mean, it's the season<br />
+Let your love fly like a bird on the wing<br />
+And let your love bind you to all living things<br />
+And let your love shine<br />
+And you'll know what I mean, that's the reason
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>There's a reason for the warm sweet nights<br />
+And there's a reason for the candle lights<br />
+Must be the season<br />
+When those love rites shine all around us<br />
+So let the wonder take you into space<br />
+And lay you under its loving embrace<br />
+Just feel the thunder as it warms your face<br />
+You can't hold back<br />
+Just let your love flow like a mountain stream<br />
+And let your love grow<br />
+With the smallest of dreams and let your love show<br />
+And you'll know what I mean, it's the season<br />
+Let your love fly like a bird on the wing<br />
+And let your love bind you to all living things<br />
+And let your love shine<br />
+And you'll know what I mean, that's the reason</li>
+</ol>
+<p><b>REF: x1</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Boys - Jesteś szalona
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=rAz93ck6cRk">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Miłość odchodzi – słyszę znów z twoich ust,<br />
+Zawsze prawda miała jakiś sens,<br />
+Te dni jak bajka, piękne jak tysiąc róż,<br />
+Ty się śmiałaś zawsze, no i cześć.</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Jesteś szalona, mówię ci,<br />
+Zawsze nią byłaś,<br />
+Skończysz wreszcie śnić?<br />
+Nie jesteś aniołem, mówię ci.<br />
+Jesteś szalona. x2<br />
+(x2)
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Na pożegnanie dajesz mi uśmiech swój,<br />
+Gdy odchodzisz wszystko burzy się,<br />
+Kochałem cię i twe szaleństwa, mocno tak,<br />
+Ty się śmiałaś zawsze, no i cześć.</li>
+</ol>
+<p><b>REF: x4</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Classic - Ja dla Ciebie Ty dla mnie
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=0Z8TxWZ6B8g">Youtube link</a></p>
+<p>Jesteś dla mnie, a ja dla ciebie,<br />
+Najjaśniejszą gwiazdą na niebie.</p>
+<ol style="list-style-type: decimal">
+<li>W mojej głowie marzeń różnych sto.<br />
+No, a one wciąż się spełniać chcą.<br />
+Każdy chciałby coś od życia mieć<br />
+I przed siebie do swych marzeń biec.</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Jesteś dla mnie, a ja dla ciebie,<br />
+Najjaśniejszą gwiazdą na niebie.<br />
+A gdy tylko w w twe oczy patrzę,<br />
+Wiem, że będziesz ze mną na zawsze.<br />
+(x2)
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Teraz mamy siebie, ty i ja.<br />
+Każdy z nas już swoje szczęście zna.<br />
+Najważniejsze dziś spełniło się.<br />
+Los połączył w końcu drogi dwie.</li>
+</ol>
+<p><b>REF: x2</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Classic - Jeszcze dzień
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=0NVUi6nRc7s">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Stworzyć chcesz mały świat<br />
+Dla swego uśmiechu.<br />
+Chciałabyś iść pod wiatr,<br />
+Nie dochodząc grzechu.<br />
+Pytasz mnie, ile dni<br />
+Jeszcze jest przed nami<br />
+I swój wzrok wpinasz wciąż<br />
+W bezgwiezdny aksamit.</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Jeszcze dzień, najwyżej dwa -<br />
+Wszystko się odmieni.<br />
+Nie odnajdziesz w swoich snach<br />
+Zimy i jesieni.<br />
+Jeszcze dzień, najwyżej dwa -<br />
+Wszystko się odmieni.<br />
+Ty zrozumiesz, ile jest<br />
+Nieba tu, na ziemi.
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Jesteś wciąż bliska snu -<br />
+Na granicy cienia.<br />
+Stawiasz swój pasjans z dat,<br />
+W których są marzenia.<br />
+Lato w nich złote jest,<br />
+A wiosna zielona.<br />
+Złoto Twe, zieleń Twą<br />
+Wezmę w swe ramiona.</li>
+</ol>
+<p><b>REF: x2</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Classic - To nie przyjaźń tylko miłość
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=3uedlCyuT-8">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Siedzę teraz sam, w szare myśli zaplątany.<br />
+Ile lat cię znam, tego dziś nie pamiętamy.<br />
+Byłem zawsze, gdy świat się walił ci na głowę,<br />
+Pomagałem ci i nie chciałem nic, ale teraz tobie powiem.</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+To nie przyjaźń, tylko miłość, uwierz mi.<br />
+Pocieszałem, ocierałem twoje łzy<br />
+I tęskniłem, i nadzieję miałem, że<br />
+Powiesz do mnie to, co tak usłyszeć chcę.<br />
+(x2)
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Fotografii stos, szczęścia kadry zatrzymane<br />
+I twój cichy głos: „Miłość drogą jest w nieznane&quot;.<br />
+Będę z tobą, gdy ktoś pozbawi ciebie złudzeń.<br />
+Znów ci otrę łzy, znów pomogę ci, może kiedyś cię obudzę.</li>
+</ol>
+<p><b>REF: x1</b></p>
+<p>To nie przyjaźń, tylko miłość, uwierz mi.<br />
+Pocieszałem, ocierałem twoje łzy<br />
+I tęskniłem, i nadzieję miałem, że<br />
+Powiesz do mnie, że ty także kochasz mnie.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Desert Rose Band - One Step Forward
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=Jfrt9v_56MU">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>You held me up, held me down<br />
+Made me crazy, then you brought me around<br />
+Were my darkness and my light<br />
+You were my blindness and my sight<br />
+Were my shelter and my storm<br />
+Made me cold then you made me warm<br />
+You were my fever and my cure<br />
+Made me doubt then you made me sure</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+One step forward and two steps back<br />
+Nobody gets too far like that<br />
+One step forward and two steps back<br />
+This kind of dance can never last
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>You were my hope and my fears<br />
+You were my laughter and my tears<br />
+Were my destiny and my fate<br />
+Kept me movin', you made me wait<br />
+Were my weakness and my power<br />
+You were the thorn and the flower<br />
+You were my sunshine and the rain<br />
+Made me feel so good, brought so much pain.</li>
+</ol>
+<p><b>REF: x1</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+E.Górniak - Dumka Na Dwa Serca
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=wcXAKhwsl6o">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li><p>Mój sokole chmurnooki<br />
+Pytaj o mnie gór wysokich<br />
+Pytaj o mnie lasów mądrych<br />
+i uwolnij mnie<br />
+Mój sokole, mój przejrzysty<br />
+Pytaj o mnie nurtów bystrych<br />
+Pytaj o mnie kwiatów polnych<br />
+I uwolnij mnie.<br />
+mój miły...</p></li>
+<li><p>Jak mam pytać gwiazd w niebiosach ?<br />
+Są zazdrosne o Twój posag:<br />
+O miłości cztery skrzynie<br />
+I o dobroć Twą<br />
+Mój miły...<br />
+Jak mam pytać innych kobiet ?<br />
+Serce me odkryją w Tobie.<br />
+I choć wiedzą, nie powiedzą<br />
+Nie odnajdę Cię</p></li>
+<li><p>Mój sokole gromowładny<br />
+Pytaj o mnie stepów sławnych<br />
+Pytaj tych burzanów wonnych<br />
+I uwolnij mnie<br />
+Przez kurhany spopielałe<br />
+Przez chutory w ogniu całe<br />
+Snu już nie znam, step odmierzam<br />
+By odnaleźć Cię.<br />
+Mój miły...</p></li>
+<li><p>Jakże pytać mam księżyca ?<br />
+On się kocha w Twych źrenicach<br />
+Słońce zgoni, step zasłoni<br />
+Nie odnajdę Cię<br />
+Mój miły...<br />
+Jakże pytać mam Kozaka ?<br />
+Co na miłość chorą zapadł<br />
+On by z żalu świat podpalił<br />
+Gdyby stracił Cię...<br />
+Jakże pytać mam księżyca ?<br />
+On się kocha w Twych źrenicach</p></li>
+<li><p>Słońce zgoni, step zasłoni<br />
+Nie odnajdziesz mnie<br />
+My wpatrzeni, zasłuchani<br />
+Tak współcześni aż do granic<br />
+W ciemnym kinie, po kryjomu<br />
+Ocieramy łz</p></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Fanatic - Czarownica
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=jh6UE2K4zKY">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Malowane na niebiesko okiennice,<br />
+Słoneczniki wyglądają na ulicę.<br />
+Na podwórzu kundel biały pręży się jak bury kot,<br />
+A Twe oczy tak się śmiały, bo patrzyłaś mi wprost.<br />
+I wróżyłaś z mojej ręki, nie pytałaś.<br />
+Wody dałaś, chleba dałaś, miodu dałaś.<br />
+W sad wiosenny mnie powiodłaś między drzewa<br />
+I zacząłem swoją rzewną piosnkę śpiewać.</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Rzeki przepłynąłem, góry pokonałem,<br />
+Wielkim lasem szedłem, nocy nie przespałem.<br />
+Żeby Ciebie spotkać w małym kącie świata,<br />
+Żeby z Tobą zostać na calutkie lata<br />
+(x2)
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Powiadają przyjaciele, że za górą,<br />
+Powiadają przyjaciele, że za rzeką,<br />
+Mieszka młoda piękolica, która wróży z kart.<br />
+To nie żadna czarownica, to jest tylko żart.<br />
+Czemu oni Twoich czarów tak się bali,<br />
+Czemu oni Czarownicą Cię nazwali,<br />
+Czemu oni nie widzieli Twej urody,<br />
+Czemu oni nie płynęli przez te wody?<br />
+Tak jak ja!!!</li>
+</ol>
+<p><b>REF: x2</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Feel - A Gdy Jest Juz Ciemno
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=7vKpv-z1ut4">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Jest już ciemno, ale wszystko jedno.<br />
+Pytam siebie, czym jest piękno?<br />
+Piękne usta, jasne dłonie, czyste myśli.<br />
+O boże i mówi tak, jak ja.<br />
+Myślę sobie, jesteś słaby, to patrz, to patrz.<br />
+A w myślach:</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Chodź tu do mnie, poczuj się swobodnie,<br />
+przy mnie bądź, aaa... przy mnie bądź.<br />
+A teraz chodź tu do mnie, poczuj się<br />
+swobodnie,<br />
+przy mnie bądź, aaa... przy mnie bądź.<br />
+(x2)
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Jest już ciemno, (ale) wszystko jedno.<br />
+Mam nadzieję, (ale) głupi jestem, że ją mam.<br />
+Bo spojrzała, jesteś słaby, to patrz. (to patrz)<br />
+A w myślach:</li>
+</ol>
+<p><b>REF: x1</b></p>
+<ol start="3" style="list-style-type: decimal">
+<li>Wiesz.<br />
+Zaufaj mi, jak chcesz.<br />
+Zaczaruj mnie, jak chcesz.<br />
+Pokochaj, kiedy ja, sam ze sobą kłócę się.<br />
+Oddychaj dla mnie.<br />
+Spójrz czasem w oczy me.<br />
+Zastanów się.<br />
+No zastanów się!! I...</li>
+</ol>
+<p><b>REF: x1</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Feel - Jak Anioła Głos
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=_d-bEM88LlM">Youtube link</a></p>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Jak anioła głos, usłyszałem ją.<br />
+Powiedziała patrz, tak to On.<br />
+Na rozstaju dróg, stoi dobry Bóg,<br />
+On wskaże Ci drogę
+</blockquote>
+<ol style="list-style-type: decimal">
+<li>Już pod koniec dnia, widzę obraz Twój<br />
+Widzę miejsca w których byłem, widzę ludzi tłum<br />
+Już pod koniec dnia, pustej szklanki dźwięk<br />
+To chyba sen;<br />
+Już pod koniec dnia, widzę obraz Twój<br />
+W pustej szklance pomarańcze, to dobytek mój<br />
+Już pod koniec dnia, pustej szklanki dźwięk<br />
+To chyba sen.</li>
+</ol>
+<p><b>REF</b></p>
+<ol start="2" style="list-style-type: decimal">
+<li>Już pod koniec dnia, widzę obraz Twój<br />
+Widzę usta w których nieraz swój topiłem ból<br />
+Już pod koniec dnia słyszę cichy szept<br />
+To chyba sen;<br />
+Już pod koniec dnia, widzę obraz Twój<br />
+Widzę dłonie, czuję serce, to ideał mój<br />
+Już pod koniec dnia, lecz nie sam</li>
+</ol>
+<p><b>REF: x2</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Fisher i Mejk - Bo to miłość
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=tiPi8-BpxHc">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Zobacz mój skarbie ile to już lat<br />
+Przeżyliśmy niejeden sztorm.<br />
+Płakaliśmy niejeden raz,<br />
+Tyle słów rozdzieliło nas.<br />
+Lecz teraz wiem mimo tylu łez,<br />
+Wiem, że warto było za tobą biec,<br />
+Dla ciebie żyć, to nie żaden wstyd.</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Bo to miłość powiem ci wprost,<br />
+Tyle lat z tobą żyję i czuję, że to<br />
+Tak, to jest to kochanie tak, to jest to!<br />
+(x2)
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Nawet nie wiesz kochanie ile dla mnie znaczysz,<br />
+Dziękuję ci Boże za wszystko co mam,<br />
+Za całe moje życie.<br />
+Lecz teraz wiem mimo tylu łez,<br />
+Wiem, że warto było za tobą biec,<br />
+Dla ciebie żyć, to nie żaden wstyd.</li>
+</ol>
+<p><b>REF: x1</b></p>
+<ol start="3" style="list-style-type: decimal">
+<li>Co mogę więcej chcieć gdy teraz tyle mam?<br />
+Uśmiech twój nie pozwala mi zapomnieć jak mnie kochasz.</li>
+</ol>
+<p><b>REF: x1</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Formacja Nieżywych Schabuff - Lato
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=eaHbjnXItXc">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Rzecz między nami była cicha<br />
+Westchnąłem do ciebie<br />
+Tak jak się wzdycha<br />
+I było nam ciasno, miło<br />
+Dużo się spało i często się piło<br />
+No i czego, czego jeszcze chcesz?</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b> Lato Lato wszędzie<br />
+Zwariowało oszalało moje serce<br />
+Lato Lato wszędzie<br />
+A Ty dziewczę zaraz wpadniesz w moje ręce
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Pisze i wymyślam słowa piosenki<br />
+Żebyś pomyślała jak jestem wielki<br />
+I nie wiesz że to właśnie ja<br />
+Chce dać ci wielki wina balon<br />
+No i czego, czego jeszcze chcesz?</li>
+</ol>
+<p><b>REF: x1</b></p>
+<ol start="3" style="list-style-type: decimal">
+<li>Ptaki zaryczały świtem na niebie<br />
+Zaśpiewałem parę dźwięków tylko dla ciebie<br />
+I w oczy twoje zamglone spoglądam<br />
+Krzyczę do ucha &quot;Ciebie pożądam&quot;<br />
+Tylko ciebie ciebie jeszcze chce</li>
+</ol>
+<p><b>REF: x2</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Formacja Nieżywych Schabuff - Ławka
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=JVd1AofNp_4">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Widziałem ją dzisiaj, tak o poranku,<br />
+Czytała książkę na ławce w parku.<br />
+Jak kot podszedłem, na brzegu usiadłem,<br />
+Podniosła oczy, a ja odpadłem.</li>
+</ol>
+<blockquote class="chorus">
+<p><b>REF:</b><br />
+Czy ktoś ich jeszcze razem widział?<br />
+Czy ktoś cokolwiek o nich wie?<br />
+Ou yeah, ou yeah, ou yeah<br />
+Czy zakochali się?</p>
+Czy ktoś ich jeszcze razem widział?<br />
+Czy ktoś cokolwiek o nich wie?<br />
+Ou yeah, ou yeah, ou yeah<br />
+Czy kochają się?
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Staliśmy osobno, a poszliśmy razem,<br />
+By spotkać się znowu na ławce za stawem.<br />
+Chciałaś powiedzieć, a ja Ci przerwałem,<br />
+Niestety nie wiem co było dalej.</li>
+</ol>
+<p>REF x3</p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Gesek - Najpiękniejsza
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=K097w-gdpEk">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Najpiękniejsza w całej klasie<br />
+wciąż pamiętam mimo lat<br />
+dla niej wiersze swe pisałem<br />
+dla nich chciałem zdobyć świat,<br />
+W starym albumie fotografia<br />
+pamiątka z dawnych lat<br />
+mówią ze miłość jest ulotna<br />
+dlaczego tęsknie tak?</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Te kasztanowe włosy<br />
+mały, zadarty nos<br />
+i te brązowe oczy<br />
+dla ciebie śpiewam wciąż, kochana<br />
+kasztanowe włosy<br />
+mały, zadarty nos<br />
+piękne brązowe oczy<br />
+dla Ciebie śpiewam wciąż<br />
+(x2)
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Najpiękniejsza w całej klasie<br />
+wciąż pamiętam ust jej smak<br />
+w moim sercu pozostanie<br />
+wciąż pamiętam ją sprzed lat,<br />
+w starym albumie fotografia<br />
+pamiątka z dawnych lat<br />
+mówią ze miłość jest ulotna<br />
+dlaczego tęsknie tak?</li>
+</ol>
+<p><b>REF: x2</b></p>
+<ol start="3" style="list-style-type: decimal">
+<li>Taka mała a ja serce jej oddałem<br />
+na jej punkcie zwariowałem<br />
+mała, choć jus dawno wyjechała<br />
+w mej pamięci pozostała<br />
+mała, daj jedne znak</li>
+</ol>
+<p><b>REF: x2</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Golec uOrkiestra - Lornetka
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=8FH0RgEIZ1E">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Kupiłek lornetkę, by podglądać Bernadetkę<br />
+Ale w łoknach żaluzje mo zasłonięte!<br />
+Księżyc wisi na niebie, a jo wciąs nie widzym Ciebie<br />
+Marzem coby ryntgenem być w takiej chwili!</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Tak bardzo, bardzo kochom ją<br />
+Że w nocy, kiedy wszyscy śpią<br />
+Jo nie śpię, kombinując jak być z nią (x2)
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Cekołbyk do rana, lec matuś zdenerwowana<br />
+Krzyczy: &quot;Znowu nie wstanies na pirsom zmianę!&quot;<br />
+Ale matuś nie wie o tym, ze kierownik mnie z roboty<br />
+wyloł, bo miołek problemy wciąs<br />
+Z koncentracją!</li>
+</ol>
+<p><b>REF: x1</b></p>
+<ol start="3" style="list-style-type: decimal">
+<li>Wcoraj wpod mi do głowy płomysł cołkiem łodlotowy<br />
+Ze jej wyślem miłosny list - anonimowy!<br />
+Myślem sobie ukradkiem: &quot;Moze kasik przypadkiem<br />
+biegnąc przepadnie wpadając wprost w me ramiona!</li>
+</ol>
+<p><b>REF: x2</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Golec uOrkiestra - Słodycze
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=6UORJqvTvPY">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Udzielił mi kiedyś mój dziadek<br />
+Porady cenniejszej niż spadek<br />
+Bym kochał kobietę z rozsądkiem, żołądkiem<br />
+Ty jesteś jak paczka cukierków<br />
+W tym swoim przyciasnym sweterku<br />
+Ty jedna dajesz mi szczerze<br />
+W talerze.</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Gdy widzę słodyce to kwiczę<br />
+A oczy mi świecą jak znicze<br />
+Lecz dobrze o tym wiesz<br />
+Że połknąłbym jak zwierz<br />
+Co tylko, co tylko tylko chcesz<br />
+(x2)
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Ty wiesz, że trzeba się najeść<br />
+By w sercu uczucie odnaleźć<br />
+Ty zawsze odpowiesz tak czule, na bóle<br />
+Masz sposób na wszystkie bolączki<br />
+Bo cuda potrafią Twe rączki<br />
+Najsłodsza ich tajemnica - kwaśnica</li>
+</ol>
+<p><b>REF: x2</b></p>
+<ol start="3" style="list-style-type: decimal">
+<li>By miłość była dojrzała<br />
+Potrzebne jest serce i strzała<br />
+I czułość dla kilku nawyków - w przełyku<br />
+Dlatego kocham w dziewczynie<br />
+Kwaśnicę na wieprzowinie<br />
+Lecz liczy się również smykałka<br />
+Do wałka</li>
+</ol>
+<p><b>REF: x2</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Hedley - Perfect
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=tUGEzPH2dJQ">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Falling a thousand feet per second<br />
+You still take me by surprise<br />
+I just know we can't be over<br />
+I can see it in your eyes<br />
+Making every kind of silence<br />
+Takes a lot to realize<br />
+It's worse to finish than to start all over<br />
+And never let it lie<br />
+And as long as I can feel you holding on<br />
+I won't fall<br />
+Even if you said I was wrong</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+I'm not perfect<br />
+But I keep trying<br />
+Cause that's what I said<br />
+I would do from the start<br />
+I'm not alive if I'm lonely<br />
+So please don't leave<br />
+Was it something I said<br />
+Or just my personality
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Making every kind of silence<br />
+It takes a lot to realize<br />
+It's worse to finish than to start all over<br />
+And never let it lie<br />
+And as long as I can feel you holding on<br />
+I won't fall<br />
+Even if you said I was wrong<br />
+I know that I'm not perfect<br />
+But I keep trying<br />
+Cause that's what I said<br />
+I would do from the start<br />
+I'm not alive if I'm lonely<br />
+So please don't leave<br />
+Was it something I said<br />
+Or just my personality</li>
+</ol>
+<p><b>REF: x2</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Hej z góry, z góry
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<hr />
+<p><a href="https://www.youtube.com/watch?v=B3SMqvOu2-Y">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li><p>Hej z góry z góry<br />
+jadą mazury<br />
+jedzie jedzie mazureczek<br />
+wiezie wiezie mi wianeczek<br />
+roz..(!)..rozmarynowy</p></li>
+<li><p>Przyjechał w nocy<br />
+koło północy<br />
+stuka puka w okieneczko<br />
+otwórz otwórz panieneczko<br />
+ko..(!)..koniom wody dać</p></li>
+<li><p>Jakże ja mam wstać<br />
+koniom wody dać<br />
+kiedy mama zakazała<br />
+żebym chłopcom nie dawała<br />
+trze..(!)..trzeba jej się bać</p></li>
+<li><p>A ty się nie bój<br />
+siadaj na koniu<br />
+pojedziemy w obce kraje<br />
+tam są inne obyczaje<br />
+ma..(!)malowany wóz</p></li>
+<li><p>Nocą jechali<br />
+ludzie wołali<br />
+co to, co to za dziewczyna<br />
+co to, co to za jedyna<br />
+je..(!).. jedzie z chłopcami</p></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Ich Troje - A wszystko to bo Ciebie kocham
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=0EcOyWc5Hkk">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Czy wiesz malutka może, jak Ciebie mi brak?<br />
+Czy czujesz to, co ja, gdy jestem sam?<br />
+Jestem opętany jak w niewoli pies.<br />
+Kto jest temu winien, wiesz?<br />
+Nie ma takich prostych słów,<br />
+Co oddadzą to, co boli mnie...<br />
+Przeczucie mam, że jednak spyta ktoś:<br />
+„Czy ta bajka się nie kończy źle”?</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+A wszystko to, bo ciebie kocham!<br />
+I nie wiem jak bez Ciebie mógłbym żyć!<br />
+Chodź, pokażę ci, czym moja miłość jest.<br />
+Dla ciebie zabije się!
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>To tylko zazdrość zżera mnie,<br />
+Zawsze wtedy, kiedy obok Ciebie nie ma mnie.<br />
+Raz jestem Doktor Jekyll, raz Mister Hyde.<br />
+Transformacja trwa – nie zatrzymam jej!<br />
+Oko w oko stań. Co za twarz!<br />
+No powiedz! – Boisz się...<br />
+Za późno już, zwalam stąd.<br />
+Będzie lepiej, jak zapomnisz mnie!</li>
+</ol>
+<p><b>REF: x1</b></p>
+<ol start="3" style="list-style-type: decimal">
+<li>Zdarza mi się być na haju, wiesz, jak jest.<br />
+Dziwne wizje wchodzą, nie pożądasz mnie...<br />
+Pragniesz kogoś bardziej – żegnaj więc.<br />
+Nie chcesz nic tłumaczyć, no to odwal się!<br />
+Ochoty nie mam słuchać i stać,<br />
+Na milczenie nie stać mnie.<br />
+Przechodzi nas oboje zimny dreszcz:<br />
+„Czy ta bajka się nie skończy źle”?</li>
+</ol>
+<p><b>REF: x2</b></p>
+<ol start="4" style="list-style-type: decimal">
+<li>Oko w oko stań. Co za twarz!<br />
+No powiedz! – Boisz się...<br />
+Za późno już, zwalam stąd.<br />
+Będzie lepiej, jak zapomnisz mnie!</li>
+</ol>
+<p><b>REF: x2</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Ich Troje - Powiedz
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=j0U4lrfzv6U">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Powiedz, powiedz czemu<br />
+Świat twój milczy cały blady od wzruszeń<br />
+Niczym słońce zaćmione przez księżyc<br />
+Czekające na chwile poruszeń.</li>
+</ol>
+<p>Powiedz, czemu pragniesz<br />
+Dojrzeć w oknach świata część odległą<br />
+Niczym drzewo więdnące bez skargi<br />
+Czekające na deszcze z nadzieją.</p>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Wstań, powiedz nie jestem sam<br />
+I nigdy więcej już nikt nie powie<br />
+Sępie miłości, nie kochasz<br />
+Ja, jestem panią/panem mych snów<br />
+Moich marzeń i lęków<br />
+Moich straconych dni<br />
+Moich łez wylanych - łez...
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Poczekajcie<br />
+Sen rozpłynął się w świtu płomieniach<br />
+Nie chcesz chyba powrócić jak Eos<br />
+w lekkich jak motyl marzeniach...</li>
+</ol>
+<p><b>REF: x2</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Ich Troje - Zawsze Z Toba Chcialbym Byc
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=Wp57PXBB7Xg">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Zadzwoniłem w środku lata,<br />
+Choć minęły już dwa lata<br />
+Ty nadal nie odzywasz się<br />
+Dziś ten list Ci napisałem<br />
+Lato zbliża się, wiec chciałem,<br />
+Powtórzyć Tobie jeszcze raz to, co wtedy</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Zawsze z Tobą chciałbym być,<br />
+Przez całe lato!<br />
+Zawsze z Tobą chciałbym być,<br />
+Kochaj mnie za to!<br />
+Zawsze z Tobą chciałbym być,<br />
+Tylko we dwoje!<br />
+Zawsze z tobą chciałbym być...<br />
+(x2)
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Daj się skusić na wakacje<br />
+Morze, plaża i kolacje<br />
+Będziemy tańczyć aż po świt<br />
+Chciałbym też w księżyca blasku<br />
+Stawiać z Tobą babki z piasku<br />
+I wciąż do ucha szeptać Ci tak, jak wtedy</li>
+</ol>
+<p><b>REF: x4</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Ivan&amp;Delfin - Jej Czarne Oczy
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=2wmjYNMJxHM">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Złe kilometry dzielą nas<br />
+Lato umiera jesieni czas<br />
+W blaszany daszek tłucze deszcz<br />
+A w mojej głowie wciąż ktoś jest<br />
+Więc gdy wspomnienia męczą cię<br />
+Wracają myśli krótkie dnie<br />
+Zobaczyć jeszcze raz</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Jej piękne czarne oczy<br />
+Śnią się czarne oczy<br />
+Ich nie przeoczysz<br />
+Wiem że nie<br />
+Jej piękne czarne oczy<br />
+Widzę czarne oczy<br />
+To za mną kroczy<br />
+Ze mną jest (2x)
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Takie to życie dziwne jest<br />
+Miłość tęsknota ścigają się<br />
+Możesz uciekać możesz nie<br />
+Jedno i drugie dopadnie cię<br />
+Wiec gdy wspomnienia męczą cię<br />
+Wracają myśli krótkie dnie<br />
+Zobaczyć jeszcze raz</li>
+</ol>
+<p><b>REF: 2x</b></p>
+<ol start="3" style="list-style-type: decimal">
+<li>Więc gdy wspomnienia<br />
+Męczą cię<br />
+Wracają myśli, krótkie dnie<br />
+Zobaczyć jeszcze raz</li>
+</ol>
+<p><b>REF: 2x</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+John Waite - If You Ever Get Lonely
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=HkfUXx8FAgA">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Thanks for calling, it's so good to hear your voice<br />
+You keep breaking up, in all the static and the noise<br />
+But I'll keep listening 'cause I never had a choice<br />
+When it came to you.<br />
+I'd love to see you, if you ever out this way<br />
+You sound happy, guess things are working out okay<br />
+And I'm getting better by putting one foot<br />
+In front of the other.<br />
+And I know that California is not to blame<br />
+And I know there's millions of people in L.A.</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+But if you ever get lonely, if you miss me<br />
+If you need someone to listen, even if it's only the sound<br />
+Of someone's voice who loves you that you need to hear<br />
+You know where to find me, if you ever get lonely
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Sounds like a good time, going down at the other end<br />
+You got a new life and a new love, and a whole new set of friends<br />
+And are you listening? Do you expect me to pretend<br />
+That I don't love you, I don't love you?</li>
+</ol>
+<p><b>REF: x1</b></p>
+<p>Were you ever really listening, were you ever really there?</p>
+<p><b>REF: x1</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+K.A.S.A - Piękniejsza
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=gOI_jW4mzMQ">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Każdy chyba to przeżył, chociaż raz<br />
+Gdy po latach odbywa się szkolny zjazd<br />
+Jadę wiec w rodzinne miejsca,<br />
+nasza szkoła była przecież najlepsza;<br />
+Z mojej klasy był prawie cały skład<br />
+w dobrej formie po mimo upływu lat<br />
+Ktoś fryzjerką ktoś biznesmenem jest<br />
+oraz ty jak mogłem pominąć cię<br />
+Byłaś w szkole całej najpiękniejsza<br />
+Do dziś mam wszystkie twoje zdjęcia<br />
+Na zajęciach wzrok wpatrzony w ciebie miałem<br />
+Chociaż byłem największym chuliganem<br />
+W miedzy czasie ja zostałem gwiazdą RnB<br />
+Chociaż w klasie nie postawiłby na to nikt<br />
+W starej szkole rozdaje autografy<br />
+Patrzę na ciebie a ty……</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Ty jesteś dziś piękniejsza<br />
+Spójrz tylko na te zdjęcia<br />
+Wpatrzony jestem w ciebie od tylu lat<br />
+Szybko nadróbmy ten stracony czas<br />
+x2
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Mówią mi że przez lata byłaś z nim<br />
+Lecz na pewno nie był to piękny film<br />
+Czułaś, że przez palce czas ucieka<br />
+Czy już wiesz że to na mnie właśnie czekasz,<br />
+Widać tak musiało właśnie być<br />
+Wyjechałem by dowiedzieć się że to ty<br />
+Jesteś tą, której mogę dziś zaufać<br />
+Musisz mnie wysłuchać, gdy……</li>
+</ol>
+<p><b>REF: x4</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Kancelarya - Zabiorę Cię
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=KvL0tXRmQw4">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Dość mam już pustych dni<br />
+I świąt których nie było<br />
+Między nami jest coś<br />
+Nie zaprzeczaj mi<br />
+Tyle mogę Ci dać<br />
+Solą życia jest miłość<br />
+Boisz się wielkich słów<br />
+To nie wstyd....</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Zabiorę Cię...właśnie tam...<br />
+Gdzie jutra słodki smak<br />
+Zabiorę Cię...właśnie tam<br />
+Gdzie słońce dla nas wschodzi<br />
+Zabiorę Cię...właśnie tam,<br />
+Gdzie wolniej płynie czas<br />
+Zabiorę Cię...właśnie tam<br />
+Gdzie szczęściu nic nie grozi
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Czekam na jeden gest<br />
+Wiara jest moją siłą<br />
+Jestem pewien, że wciąż<br />
+Potrzebujesz mnie<br />
+Dzień przemija za dniem<br />
+Znów nam siebie ubyło<br />
+Życie...zbyt krótko trwa,<br />
+Więc zdecyduj się.....</li>
+</ol>
+<p><b>REF: x1</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Kapela Górole - Wietrze wiej
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=lpx-DYthSZA">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Powiedz mi co widzisz w moich snach<br />
+Powiedz mi co tak rozpala w sercu żal<br />
+Płyną dni choć chyba się zatrzymał czas<br />
+Chęć do tańca krąży wokół nas</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Wietrze wiej rzeko płyń<br />
+Dziś się spełnią wszystkie nawet niemożliwe sny<br />
+Głosie leć i śpiewaj więc<br />
+Bo odkryły własnie sie dwie połówki serc
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Dobrze wiem co teraz w mojej duszy gra<br />
+Ważny dzień kolory nieba w sercu ma<br />
+Gwiżdże wiatr melodie kolorowych snów<br />
+Miłości dobry nadlatuje duch</li>
+</ol>
+<p><b>REF: x4</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Krzysztof Krawczyk - Za Tobą pójdę jak na bal
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=uP6mSO1j-9Q">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Ty jedna umiesz w życie grać,<br />
+Świat z przymrużeniem oka brać.<br />
+Gdy trzeba i nie trzeba w głos się śmiać<br />
+I na przekór wszystkim zmieniać nagle zdanie.<br />
+Bo z Tobą można konie kraść<br />
+Do rana tańczyć, we dnie spać.<br />
+Zapomnieć, że zbyt szybko mija czas.<br />
+Śmiać się z życia póki czas.</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Za Tobą pójdę jak na bal, nie obejrzę się,<br />
+Nikt mnie nie zatrzyma, nie zatrzyma mnie.<br />
+Niczego mi nie będzie żal, pójdę tak jak w dym.<br />
+Tylko powiedz, że to właśnie Ty<br />
+(x2)
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Ty umiesz zawsze wyjść na plus<br />
+I w biedzie znaleźć szczęścia łut,<br />
+Bez końca wierzyć, że się zdarzy cud<br />
+I jak nikt na świecie mieć na wszystko sposób.<br />
+Przy Tobie zbudzę się ze snu,<br />
+Bo Ty pogody masz za dwóch.<br />
+Gdy mi sie uda Ciebie znaleźć już,<br />
+Zrozumiemy się bez słów.</li>
+</ol>
+<p><b>REF: x2</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Lanco - Greatest Love Story
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=aHl0tlUYDBI">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>They said I was nothing but a troublemaker never up to no good<br />
+You were the perfect all American girl wouldn't touch me even if you could<br />
+But you was sneaking out your window everynight riding shotgun in my car<br />
+We go to the river and find us a spot and we probably went a little too far<br />
+Just a little too far</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Cause I was gonna be your forever<br />
+You were gonna be my wife<br />
+We didn't know any better<br />
+Didn't have a clue about life<br />
+But I was what you wanted you were what I needed<br />
+And we could meet in between<br />
+We were gonna be the greatest love story this town had ever seen
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>So you went off to college and I got a job I was working that 9 to 5<br />
+Dreaming of the days when you were in my arms I've never felt so alive<br />
+I spent my days working, spent my nights drinking, howling at the moon<br />
+Screaming for the days when you were coming back, no couldn't come to soon<br />
+Couldn't come to soon</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+When I was gonna be your forever<br />
+You were gonna be my wife<br />
+But you went off to find better<br />
+And I was learning all about life<br />
+But I was what you wanted and you were what I needed<br />
+And we could meet in between<br />
+We were gonna be the greatest love story this town had ever seen
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>So you came back after a long four years<br />
+Your college boyfriend didn't work out<br />
+So we went out for a couple of drinks to find out who we are now<br />
+Sure we changed but way deep down you had the same old feelings for me<br />
+I went to the store and I bought you a ring and I got down on one knee<br />
+Down on one knee, and I said:</li>
+</ol>
+<p><b>REF: x1</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Lobuzy - Łobuz kocha najbardziej
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=105WC1U_NdU">Youtube link</a></p>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Powiem Ci na starcie<br />
+Że Łobuz kocha najbardziej<br />
+I chociaż wszyscy mają parcie<br />
+To Łobuz kocha najbardziej,<br />
+To Łobuz kocha najbardziej
+</blockquote>
+<ol style="list-style-type: decimal">
+<li>Boska sukienka opina Ciebie<br />
+Patrzę na metkę “Made In Heaven”<br />
+Czy anioły pijają driny?<br />
+Bo ja tak, to szukam dziewczyny</li>
+</ol>
+<p><b>REF: x1</b><br />
+Bo Ty, chcesz Łobuza<br />
+A ja myślę o arbuzach<br />
+I co? Co mi zrobisz?<br />
+No co? Nic nie zrobisz!</p>
+<ol start="2" style="list-style-type: decimal">
+<li>Powiedz czy nóżka cie zabolała ?<br />
+Kiedy z nieba upadałaś ?<br />
+Czy anioły pijają driny?<br />
+Bo ja tak, to szukam dziewczyny</li>
+</ol>
+<p><b>REF: x2</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Lombard - Przeżyj
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=G7OgVpWQs5s">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Na życie patrzysz bez emocji<br />
+Na przekór czasom i ludziom wbrew<br />
+Gdziekolwiek jesteś w dzień czy w nocy<br />
+Oczyma widza oglądasz grę<br />
+Ktoś inny zmienia świat za Ciebie<br />
+Nadstawia głowę, podnosi krzyk<br />
+A Ty z daleka, bo tak lepiej<br />
+I w razie czego nie tracisz nic</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Przeżyj to sam, przeżyj to sam<br />
+Nie zamieniaj serca w twardy głaz<br />
+Póki jeszcze serce masz<br />
+(x2)
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Widziałeś wczoraj znów w dzienniku<br />
+Zmęczonych ludzi wzburzony tłum<br />
+I jeden szczegół wzrok Twój przykuł<br />
+Ogromne morze ludzkich głów<br />
+A spiker cedził ostre słowa<br />
+Od których nagła wzbierała złość<br />
+I począł w Tobie gniew kiełkować<br />
+Aż pomyślałeś: milczenia dość</li>
+</ol>
+<p><b>REF: x2</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Long &amp; Junior - Kolorowa Sukienka
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=777pdH-lfsc">Youtube link</a></p>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Ona miała suknię kolorową,<br />
+czarne getry, czapkę i bluzę sportową<br />
+Ona miała coś czego nie miał nikt<br />
+i słuchała polskich płyt<br />
+Ona miała suknię kolorową,<br />
+czarne getry, czapkę i bluzę sportową<br />
+Ona miała coś czego nie miał nikt<br />
+i słuchała polskich płyt<br />
+Tak jak nikt !
+</blockquote>
+<ol style="list-style-type: decimal">
+<li>Gdy kochała to całego<br />
+Gdy pragnęła to jednego<br />
+Każdy chciał być jej kolegą<br />
+Każdy chciał z nią być<br />
+Kolorowa jak najpiekniejszy kwiat<br />
+Włosy spięte w kucyk byle jak<br />
+Malowała się szafy miała dwie<br />
+Każdy wiedział że...</li>
+</ol>
+<p><b>REF: x1</b></p>
+<ol start="2" style="list-style-type: decimal">
+<li>Gdy tańczyła to samotnie<br />
+Gdy się śmiała to zalotnie<br />
+Każdy chciał jej bezpowrotnie<br />
+Każdy chciał z nią być<br />
+Uśmiechała się gdy mówiła nie<br />
+I kochała wszystkich nawet mnie<br />
+Całowała kiedy chciała<br />
+I Niczego nie żałowała</li>
+</ol>
+<p><b>REF: x2</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Luka Rossi - A Ty bądź
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=h2oJ5C6K8Gg">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>A ty bądź dla mnie jedynym snem<br />
+wszytko co dzisiaj wiem<br />
+a ty bądź wiara w kolejny cud<br />
+kiedy wokoło chłód<br />
+miła ma, jest moim marzeniami<br />
+mego życia spełnieniem</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+A ty bądź<br />
+moim pierwszy oddechem<br />
+moim smutkiem i grzechem<br />
+moim każdym uśmiechem<br />
+a ty bądź<br />
+moją nieskończonością<br />
+mym spokojem i złością<br />
+mą największą miłością (x2)<br />
+A ty bądź<br />
+A ty bądź
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>A ty bądź<br />
+moją drogą do chmur<br />
+moim niebem bez dziur<br />
+A ty bądź każdym kolejny tchem<br />
+każdym udanym dniem,<br />
+Miła ma, jest moim marzeniami<br />
+mego życia spełnieniem.</li>
+</ol>
+<p><b>REF: x2</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Magik Band - Góraleczka
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=-i40ehNWnsQ">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Zobaczyłem ją nad rzeką,<br />
+taką piękną, uśmiechniętą,<br />
+długie nogi i warkoczyk,<br />
+jak tu się nie zauroczyć.<br />
+Chciałem do niej dziś zagadać,<br />
+lecz uciekła gdzieś odwaga,<br />
+i jej został przed oczami,<br />
+obraz jej między górami.</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Ona mi w głowie zawróciła,<br />
+mój góralski świat przysłoniła,<br />
+piękna, zgrabna jak laleczka,<br />
+moja słodka Góraleczka. x2
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Znów ujrzałem ją nad rzeką,<br />
+znów taką piękną, uśmiechniętą,<br />
+na odwagę się zebrałem,<br />
+i to co czuję jej wyznałem.<br />
+Ona się na mnie popatrzyła,<br />
+chyba się nawet nie zdziwiła,<br />
+i niewinnie wyszeptała,<br />
+chcesz mnie mieć musisz się starać.</li>
+</ol>
+<p><b>REF: x2</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Maryla Rodowicz - Ale to już było
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=FKZAj2UHzRs">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Z wielu pieców się jadło chleb<br />
+Bo od lat przyglądam się światu<br />
+Nieraz rano zabolał łeb<br />
+I mówili: zmiana klimatu<br />
+Czasem trafił się wielki raut<br />
+Albo feta proletariatu<br />
+Czasem podróż w najlepszym z aut<br />
+Częściej szare drogi powiatu</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Ale to już było i nie wróci więcej<br />
+I choć tyle się zdarzyło<br />
+To do przodu wciąż wyrywa głupie serce<br />
+Ale to już było, znikło gdzieś za nami<br />
+Choć w papierach lat przybyło<br />
+To naprawdę wciąż jesteśmy tacy sami
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Na regale kolekcja płyt<br />
+I wywiadów pełne gazety<br />
+Za oknami kolejny świt<br />
+I w sypialni dzieci oddechy<br />
+One lecą drogą do gwiazd<br />
+Przez niebieski ocean nieba<br />
+Ale przecież za jakiś czas<br />
+Będą mogły same zaśpiewać:</li>
+</ol>
+<p><b>REF: x2</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Mavers - Ona ma to coś
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=L1soOne9aRM">Youtube link</a></p>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Ona ma to coś, daje buziaki słodkie<br />
+Ta dziewczyna to strzał w dziesiątkę.<br />
+Ona ma to coś, daje buziaki słodkie<br />
+Ta dziewczyna to strzał w dziesiątkę.
+</blockquote>
+<ol style="list-style-type: decimal">
+<li>Lubi się bawić, spędzać czas w klubie<br />
+Ja pomyślałem, szalone lubię.<br />
+Na horyzoncie jest tylko ona<br />
+Moim marzeniem być w jej ramionach.</li>
+</ol>
+<p><b>REF: x2</b></p>
+<ol start="2" style="list-style-type: decimal">
+<li>A kiedy tańczy, kiedy szaleje<br />
+Nigdy nie pyta co tu się dzieje.<br />
+Bo w moim sercu już tylko ona<br />
+Taka radosna, taka szalona.</li>
+</ol>
+<p><b>REF: x3</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Mig - Będe przy Tobie
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=Y7ZTmRUFttk">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Ja nie znam piękniejszej dziewczyny,<br />
+mógłbym kochać ją bez żadnej przyczyny.<br />
+Sam sobie chciałbym wytłumaczyć,<br />
+czemu ona tak dla mnie tyle znaczy.</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Będę całym sercem przy Tobie,<br />
+będę i niech każdy się dowie.<br />
+Będę, jeśli o to poprosisz,<br />
+kwiaty Tobie będę przynosił.<br />
+(x2)
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Ja dla niej, ona tylko dla mnie,<br />
+to nie zmieni się, wiem to dziś dokładnie.<br />
+Pragnę, by była zawsze blisko,<br />
+nie zawaham się, dla niej zrobię wszystko.</li>
+</ol>
+<p><b>REF: x1</b></p>
+<p>Dlatego...<br />
+<b>REF: x1</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Mig - Dziewczyna z sąsiedniej ulicy
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=fzvR8UwYk5Y">Youtube link</a></p>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Czy ktoś wie jak na imię ma<br />
+Dziewczyna z sąsiedniej ulicy<br />
+Ona w mym sercu ciągle gra<br />
+Muzykę tą niech każdy słyszy<br />
+Czy ktoś wie jak na imię ma<br />
+Dziewczyna z sąsiedniej ulicy<br />
+Ona w mym sercu ciągle gra<br />
+Czy mnie słyszy ?
+</blockquote>
+<ol style="list-style-type: decimal">
+<li>Każdego dnia spotykam ją<br />
+Co muszę zrobić by być z nią<br />
+Nie umiem już tak dłużej żyć<br />
+Ja chciałbym tylko przy niej być</li>
+</ol>
+<p><b>REF: 1x</b></p>
+<ol start="2" style="list-style-type: decimal">
+<li>Szukałem wciąż miłości mej<br />
+Nie wiedziałem że tak blisko jest<br />
+Codziennie widuję ją<br />
+Lecz nadal nie wiem jak ją zwą</li>
+</ol>
+<p><b>REF: 1x</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Mig - Krótka Historia
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=ItQSike7sGY">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Krótka historia dwojga serc<br />
+lecz nieszczęśliwa tak<br />
+gdy piękne słowa tracą sens<br />
+niektórych całkiem brak<br />
+taki początek końca jest<br />
+gdy w sercach tylko gniew<br />
+bo nie pisane ludziom tym było kochać się</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+A teraz cierpisz<br />
+a teraz płaczesz<br />
+bo to miało być inaczej<br />
+ta wielka miłość, wielka siłą<br />
+na sercu rany zostawiła<br />
+a teraz cierpisz<br />
+a teraz płaczesz<br />
+bo to miało być inaczej<br />
+ta wielka miłość, wielka siłą<br />
+na sercu rany zostawiła
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Łzy z oczu płyną<br />
+nie ma sił<br />
+czy to jeszcze ty?<br />
+los sobie zadrwił<br />
+zabrał ci co najważniejsze dziś<br />
+choć chcesz to zmienić<br />
+nie wiesz jak<br />
+jak masz cofnąć czas<br />
+z wielkiej miłości nie ma już nic’<br />
+tylko końca krzyk.</li>
+</ol>
+<p><b>REF: x2</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Mig - Lalunia
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=e3B3OAEiYF8">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Olśniewająca, najpiękniejsza za wszystkich dam<br />
+Zdumiewająca, 100 pomysłów na wszystko ma<br />
+Właśnie taka, której dziś potrzebuje świat<br />
+Której na tym świecie nie było 1000 lat<br />
+Nosi cały czas swe małe okularki<br />
+I wygląda jak z animowanej bajki</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+La-La-La-Lalunia z niej<br />
+La-La-La-Laleczka<br />
+Chyba w niej zabujam się<br />
+Daję ci słowo<br />
+Chcę być tylko z toba<br />
+(x2)
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Najpiękniejsza, ze nie można ominąć jej<br />
+Najsprytniejsza, bardzo szybko domyśla się<br />
+Właśnie taka, której mozan zaufac dziś<br />
+Której moza oddać wszystko lub nie dac nic<br />
+Nosi cały czas swe małe okularki<br />
+I wygląda jak z animowanej bajki</li>
+</ol>
+<p><b>REF: x3</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Mig - Wymarzona
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=GzjOboh588Y">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Wymarzona, tak jak z mojego snu.<br />
+Taka śliczna, że aż brakuje tchu.<br />
+Ta jedyna, która coś w sobie ma,<br />
+zjawiskowa.</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Dlatego kocham ją mocno, ja wiem,<br />
+że nie liczy się nic oprócz niej.<br />
+Ona buzię ma słodką,<br />
+to ta, która szczęście mi da!<br />
+(x2)
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Piękne oczy, które kuszą co dzień.<br />
+Za ten uśmiech zrobię wszystko co chcesz.<br />
+Mógłbym patrzeć na nią każdego dnia,<br />
+tak bez końca...</li>
+</ol>
+<p><b>REF: x4</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Milano - O Tobie kochana
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=pIU4UP53hTc">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Obiecała mi, że się spełnią moje sny.<br />
+W mych marzeniach na zawsze już będziesz żyć.<br />
+Czy odgadnie ktoś jak na imię ona ma?<br />
+Nikt jej nie zna, tylko ja.</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+O tobie, kochana, o tobie myślę wciąż.<br />
+O tobie, kochana, o tobie myślę wciąż.<br />
+(x2)
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Pragnę przy niej być, tylko patrzeć w oczy jej.<br />
+Czy wysłucha i wszystko będzie ok!<br />
+Nie wiem nawet czy odwzajemni miłość mi.<br />
+Będę czekał cały czas.</li>
+</ol>
+<p><b>REF: x2</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Paweł Gołecki - Zagrajmy, zaśpiewajmy
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=5eDN-mHjCds">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Gdy muzyka zacznie grac cały świat wiruje<br />
+Znowu smak ma każda chwila życie w nas pulsuje<br />
+Jeszcze tyle jest przed nami los dziś uśmiecha<br />
+Życie trzeba brać garściami nie ma na co czekać</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Zagrajmy, zaśpiewajmy nas nie trzeba prosić<br />
+Bo muzykę każdy z nas głęboko w sercu nosi.<br />
+Dzisiaj w ten niezwykły czas, zagrajmy jeszcze raz<br />
+Zagrajmy, zaśpiewajmy nas nie trzeba prosić<br />
+Bo muzykę każdy z nas głęboko w sercu nosi.<br />
+Dzisiaj w ten niezwykły czas, zagrajmy jeszcze raz.
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Tyle wciąż się zdarzyć może świat się ciągle zmienia<br />
+Raz na wozie, raz pod wozem warto mieć marzenia<br />
+Czasem można wiele stracić aby zyskać wszystko<br />
+Uwierz w siebie a zobaczysz szczęście jest już blisko</li>
+</ol>
+<p><b>REF: 2x</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Perfect - Kolysanka dla Nieznajomej
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=FnlbR0xLFsg">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Gdy nie bawi cię już<br />
+Świat zabawek mechanicznych<br />
+Kiedy dręczy cię ból<br />
+Niefizyczny<br />
+Zamiast słuchać bzdur<br />
+Głupich telefonicznych wróżek zza siedmiu mórz<br />
+Spytaj siebie czego pragniesz<br />
+Dlaczego kłamiesz, że miałaś wszystko<br />
+Gdy udając że śpisz<br />
+W głowie tropisz bajki z gazet<br />
+Kiedy nie chcesz już śnić<br />
+Cudzych marzeń<br />
+Bosa do mnie przyjdź<br />
+I od progu bezwstydnie powiedz mi<br />
+Czego chcesz<br />
+Słuchaj jak dwa serca biją<br />
+Co ludzie myślą - to nieistotne</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Kochaj mnie Kochaj mnie<br />
+Kochaj mnie nieprzytomnie<br />
+Jak zapalniczka płomień<br />
+Jak sucha studnia wodę<br />
+Kochaj mnie namiętnie tak<br />
+Jakby świat się skończyć miał
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Swoje miejsce znajdź<br />
+I nie pytaj czy taki układ ma jakiś sens<br />
+Słuchaj co twe ciało mówi<br />
+W miłosnej studni już nie utoniesz.</li>
+</ol>
+<p><b>REF: x2</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Perfect - Nie płacz ewka
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=XvrVPG7uN34">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Nie płacz, Ewka, bo tu miejsca brak na twe babskie łzy<br />
+Po ulicy miłość hula wiatr wśród rozbitych szyb<br />
+Patrz, poeci śliczni prawdy sens roztrwonili w grach<br />
+W półlitrówkach pustych SOS wysyłają w świat</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Żegnam was, już wiem<br />
+Nie załatwię wszystkich pilnych spraw<br />
+Idę sam, właśnie tam, gdzie czekają mnie<br />
+Tam przyjaciół kilku mam od lat<br />
+Dla nich zawsze śpiewam, dla nich gram<br />
+Jeszcze raz żegnam was, nie spotkamy się
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Proza życia to przyjaźni kat, pęka cienka nić<br />
+Telewizor, meble, mały fiat: oto marzeń szczyt<br />
+Hej, prorocy moi z gniewnych lat, obrastacie w tłuszcz<br />
+Już was w swoje szpony dopadł szmal, zdrada płynie z ust</li>
+</ol>
+<p><b>REF: 1x</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Ronnie Dunn - Damn Drunk
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=DQfB4z0vMBY">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Whoa I, I just wanna ease your mind<br />
+Put your doubts to bed tonight<br />
+Lay down and let me tell you<br />
+You're, you're the kind of once in our lives<br />
+That lock it down don't come around twice<br />
+I guess what I'm sayin'<br />
+This heart of mine ain't playin'</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+If you were this guitar, I'd turn it to eleven<br />
+If you were an angel, I'd pray to go to heaven<br />
+If they wouldn't let me in, I'd break the gates down<br />
+I'd break 'em all down<br />
+If you were on the other side of the world<br />
+I'd spin that thing right back around just to get to you girl<br />
+I love the way you always go and mess me up<br />
+If you were a whiskey, girl, I'd be a damn drunk
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Oh hey, go on and roll those pretty blue eyes<br />
+Laugh and say boy you lie<br />
+Girl I wouldn't dare<br />
+Dare to make you love me more<br />
+I can take that on for sure<br />
+'Cause what we got is crazy, crazy good</li>
+</ol>
+<p><b>REF: x2</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Seventeen - Niezwyczajna miłość
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=aNFyUc6etx0">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Kocham cię nie za to wcale<br />
+Że masz całe morze zalet<br />
+Wiesz że nie<br />
+Kocham cię zwyczajnie szczerze<br />
+Czy tak trudno w to uwierzyć<br />
+Mów co chcesz<br />
+Gdy cię nie ma stoję w oknie<br />
+Czasem na przystanku moknę<br />
+Tak jak pies<br />
+Nawet w chwilach zapomnienia<br />
+Wszędzie szukam twego cienia<br />
+W noc i w dzień</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Powiedz - tak<br />
+Na sto tysięcy wielkich planów<br />
+Jakie dla nas mam<br />
+Na mój znak<br />
+Zapomnij raz o całym świecie<br />
+Chcę być tylko z tobą<br />
+Zapnij pas<br />
+Porywam cię do świata marzeń<br />
+Nie oglądaj się<br />
+Tylko nie mów - nie
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Chciałbym dać ci tyle rzeczy<br />
+Z których cieszą się kobiety<br />
+Aż do łez<br />
+Ale ty zamykasz oczy<br />
+Jak mam cię zauroczyć<br />
+Nie wiem jak to jest</li>
+</ol>
+<p><b>REF: x4</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Slawomir - Miłość w Zakopanem
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=n2hJA78YuWw">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Teraz już wszystko wiem<br />
+Bawiłem grubo się i w Ameryce (USA)<br />
+Gdzieś pod palmami raj, mówili jedź, bo tam, podobno życie (ooo)<br />
+To był przepiękny czas, życie tętniło w nas pamiętasz miła? (ściga nas, ściga nas)<br />
+Lecz to w Ojczyźnie właśnie nam się przydarzyła</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Miłość, miłość w Zakopanem<br />
+Polewamy się szampanem<br />
+Rycerzem jestem ja, a ty królową nocy<br />
+Miłość żarzy twoje oczy<br />
+Rozpędzona jak motocykl<br />
+Hej wypijemy syćkie drinki aż do dna
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Cekiny błyszczą twe, uśmiechem kusisz mnie,<br />
+DJ przygrywa (DJ przygrywa)<br />
+Splecione ciała dwa, tak piękni ty i ja, szczęście nadpływa (ooo)<br />
+Choć na parkiecie tłum, tu dzisiaj oprócz nas nikogo nie ma (nie ma nas, nie ma nas)<br />
+Cześć tu Sławomir, a w mych ramionach Magdalena</li>
+</ol>
+<p><b>REF: x1</b></p>
+<ol start="3" style="list-style-type: decimal">
+<li>Poranek, jasny świt, głowy leciutkie, bo to przecież góry (to przecież góry)<br />
+Na niebie słońce lśni, ty jesteś dzisiaj nim, przeganiasz chmury (ooo)<br />
+Buzi mi teraz daj, a potem więcej gdybędziemy sami,<br />
+Bo od wieczora baby znowu zaczynamy</li>
+</ol>
+<p><b>REF: x2</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Stachurski - Czuje i wiem
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=bdpqNi2R59Q">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Nie wiem co to miłość<br />
+Lecz wiem już co to ból i gniew<br />
+Krok za krokiem żyjąc<br />
+Wciąż uczę się pokory, by nie stracić Cię<br />
+Nie potrafiłbym wyrzec się Ciebie<br />
+Nie potrafił zapomnieć tych chwil<br />
+Dziś wystarczy kilka prostych słów, by<br />
+By odnaleźć się znów</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Więc błagam Cię<br />
+Nie zostawiaj mnie tak<br />
+Jakbym nigdy nie istniał<br />
+Jakby walił się świat<br />
+Jestem taki jak Ty<br />
+czuję i wiem<br />
+Że wciąż kocham Cię<br />
+Że wciąż kocham Cię<br />
+(x2)
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Nie mów że to koniec<br />
+Nie mów że to życia kres<br />
+Choć nie wiem co to miłość i<br />
+Jestem jaki jestem, ale kocham Cię<br />
+Nie potrafiłbym wyrzec się Ciebie<br />
+Nie potrafił zapomnieć tych chwil<br />
+Dzisiaj chciałbym wszystko wytłumaczyć<br />
+Lecz brakuje mi słów</li>
+</ol>
+<p><b>REF: x2</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Stachurski - Gdy zapłaczesz
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=i-wo4MiWVJc">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Pytasz czy wierzę w miłość i jej przeznaczenie<br />
+Czy słowa naprawdę dziś mogą zadać ból<br />
+Kogo naprawdę widzę gdy patrzę na ciebie<br />
+Czy to co czuję dziś, też jutro będę czuł.</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Wybacz mi, już wiem<br />
+Nie potrafię dłużej żyć bez ciebie<br />
+Wybacz mi, już wiem<br />
+Nie potrafię tak już żyć<br />
+Mija czas, Bóg wie<br />
+Czy też jutro będę obok ciebie<br />
+Aby znów wytrzeć łzy<br />
+Gdy zapłaczesz.
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Co dzień gdy serce moje czule całujesz<br />
+Co noc gdy słyszę jak płaczesz obok gdzieś<br />
+Kto nam odpowie dziś czy to naprawdę miłość<br />
+Czy tylko suchy liść, który nie może spaść.</li>
+</ol>
+<p><b>REF: x2</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Szła dzieweczka
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<hr />
+<p><a href="https://www.youtube.com/watch?v=3x-q7qn6_pE">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Szła dzieweczka do laseczka<br />
+Do zielonego - ha, ha, ha<br />
+Do zielonego - ha, ha, ha<br />
+Do zielonego.<br />
+Napotkała myśliweczka<br />
+Bardzo szwarnego - ha, ha, ha<br />
+Bardzo szwarnego - ha, ha, ha<br />
+Bardzo szwarnego.</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Gdzie jest ta ulica, gdzie jest ten dom<br />
+Gdzie jest ta dziewczyna<br />
+Co kochom ją.<br />
+Znalazłem ulicę, znalazłem dom<br />
+Znalazłem dziewczynę<br />
+Co kochom ją.<br />
+(x2)
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Myśliweczku, kochaneczku<br />
+Bardzom ci rada - ha, ha, ha x3<br />
+Dałabym ci chleba z masłem<br />
+Alem go zjadła - ha, ha, ha x3</li>
+</ol>
+<p><b>REF: x2</b></p>
+<p>Jak żeś zjadła, to żeś zjadła<br />
+To mi się nie chwal - ha, ha, ha x3<br />
+Bo jak bym Cię w lesie spotkał<br />
+To bym Cię zeprał - ha, ha, ha x3</p>
+<p><b>REF: x2</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Top One - O miła moja
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=L7Foik9lQmw">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Serce moje płacze i na ziemi jest mi źle<br />
+Bo dziewczyna którą kocham, opuściła nagle mnie<br />
+Zostawiła me uczucia i zostałem całkiem sam<br />
+A ja o niej ciągle marzę i jej obraz w sercu mam.</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+O miła moja, czy zdradziłem kiedyś cię<br />
+Czy zrobiłem ci coś złego, czy ci ze mną było źle<br />
+O miła moja, czy mój płacz nie wzrusza cię<br />
+Czy twe serce jest tak twarde, że opuszczasz teraz mnie
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>W sercu został smutek i wspomnienie tamtych dni<br />
+Gdy cieszyłem się tak bardzo ze spędzonych razem chwil<br />
+Ust twych ukochanych, nie zobaczę nigdy już<br />
+Nie przytulaj znów do serca, najpiękniejszej z wszystkich róż</li>
+</ol>
+<p><b>REF: x2</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Upływa szybko życie
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<hr />
+<p><a href="https://www.youtube.com/watch?v=sElKaBQdY9M">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li><p>Upływa szybko życie,<br />
+Jak potok płynie czas,<br />
+Za rok, za dzień, za chwilę,<br />
+Razem nie będzie nas. /bis</p></li>
+<li><p>I nasze młode lata<br />
+Upłyną szybko w dal,<br />
+A w sercu pozostanie<br />
+Tęsknota, smutek, żal. /bis</p></li>
+<li><p>Więc póki młode lata,<br />
+Póki wiosenne dni<br />
+Niechże przynajmniej teraz<br />
+Nie płyną gorzkie łzy. /bis</p></li>
+<li><p>Choć pamięć o nas zginie,<br />
+Już za niedługi czas,<br />
+Niech piosnka w dal popłynie<br />
+Póki jesteśmy wraz. /bis</p></li>
+<li><p>A jeśli lasów koło,<br />
+Złączy zerwaną nić,<br />
+Będziemy znów pospołu<br />
+Śpiewać, marzyć, śnić. /bis</p></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Verba - Bez Ciebie świat
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=_SI4PeK4s7s">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Kiedy przy mnie śpisz kochanie<br />
+Tak słodko leżysz w świetle gwiazd<br />
+Wiatr już dawno zdmuchnął tamte dni<br />
+Których nie chcę znać<br />
+Nie chcę znowu czuć tej pustki<br />
+Jaką jest bez Ciebie świat<br />
+Jak pragnienia które zatarł czas<br />
+Gorzkimi łzami płaczące<br />
+Jak życie które nie ma barw<br />
+W smutnej szarości topniejące<br />
+Zostań przy mnie<br />
+Niech ta noc przytuli nas…(ooo) przytuli nas.</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Nie wiem czym bez Ciebie byłby mój świat<br />
+Żadne wiersze nie mówią o tym co dzięki Tobie mam<br />
+Miałem być obrazem Twojego dnia<br />
+Nie popsujmy tego co nam namalował czas.
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Jak wstrzymać oddech<br />
+Kiedy okręt tonie<br />
+Wspinać się na maszt<br />
+By przeżyć jeszcze moment<br />
+Chciałbyś chociaż jeden dzień<br />
+Przecież tak to nie może skończyć się<br />
+Dlatego teraz jestem jak drzewo<br />
+Ugięte na wietrze<br />
+Jak samotny ptak<br />
+Pokochany przez przestrzeń<br />
+Jak samotność<br />
+Na kartach powieści<br />
+Wciąż szukam tego<br />
+Co nie ma dalszej części.</li>
+</ol>
+<p><b>REF: x2</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Verba - Mogliśmy
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=Ev3M1b3W66M">Youtube link</a></p>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Mogliśmy dojść najdalej ze wszystkich<br />
+A teraz każde z nas szuka drugiego w snach<br />
+To historia, która nie znajdzie końca<br />
+Opowiada o tych, których zmazał czas<br />
+Może spotkają się jeszcze w samotnym mieście<br />
+Może znajdą dzień, w którym zgubili szczęście<br />
+Może miną się i pójdą w inną stronę<br />
+Może tak, może nie
+</blockquote>
+<ol style="list-style-type: decimal">
+<li>Mogę zostać, jeśli tylko chcesz<br />
+Ale powiedz, że potrzebujesz mnie<br />
+Żebym został z Tobą, tu i teraz<br />
+Bo beze mnie nie możesz się pozbierać<br />
+Mogę powstać, miłość mnie prostuje<br />
+Daje siłę, która nas buduje<br />
+Łatwiej wierzyć, jeśli wciąż utwierdzasz<br />
+Że nie zniknę z Twego serca<br />
+Mogę marznąć, kiedy wiem, że wrócisz<br />
+Bo ogrzejesz mnie, mocno tak przytulisz<br />
+Będziesz zawsze, przy mnie, marzę o tym<br />
+Twoje ciepło wypala wszelkie kłopoty<br />
+Mogę zasnąć, jeśli zaśniesz obok<br />
+Słodka noc, odpływam razem z Tobą<br />
+I ta chwila, którą docenia każdy<br />
+Kto w objęciach żegna białe gwiazdy</li>
+</ol>
+<p><b>REF: x1</b></p>
+<ol start="2" style="list-style-type: decimal">
+<li>Coś się stało, widzę to wyraźnie<br />
+Chyba najgorszy sen opuścił wyobraźnię<br />
+Jeszcze milczę, chociaż serce krzyczy<br />
+Zaraz zacznę otwierać usta ciszy<br />
+Może powiesz mi, co się dzieje z nami<br />
+Nie zatrzymam łez, karmiłaś mnie kłamstwami<br />
+Jest ktoś inny i w nocy był tu<br />
+Masz w sobie tyle miłości, że rozdzielasz kilku?<br />
+Nie chcę Cię już znać, lepiej odejdź ode mnie<br />
+Zrujnowałaś to, co przecież było piękne<br />
+Starałem się, a teraz nie ma Ciebie<br />
+Samotnie żegnam przed snem białe gwiazdy na niebie<br />
+Mam nadzieję, że przyśnisz mi się lepsza<br />
+A gdy obudzę się nie będę nic pamiętać<br />
+Rozdarłaś zdjęcie wspólnego jutra<br />
+A teraz zjeżdżaj i pozdrów Twego kumpla</li>
+</ol>
+<p><b>REF: x2</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Verba - Pokaż mi
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=pfAly5eiA6Q">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Rozglądam się, ta sobotnia noc<br />
+Przyszedłem sam w nadziei, że spotkam Cię<br />
+Ludzi tłum niewyraźny dzisiaj dla mnie jest<br />
+Bo jeśli spojrzy w tę stronę praktycznie przez moment<br />
+Tak jakby mi powie to jeszcze nie koniec<br />
+Przyznaję to szczerze, że mam słabość do Ciebie<br />
+Mam słabość do Ciebie.</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+Pokaż mi, że bardzo chcesz<br />
+Pokaż jak mnie kochasz<br />
+Pokaż mi, pokaż mi właśnie dziś.<br />
+Pokaż mi, że bardzo chcesz<br />
+Pokaż jak mnie kochasz<br />
+Pokaż mi, pokaż mi właśnie dziś.<br />
+(x2)
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Stoję przy ścianie i patrzę na panie<br />
+Rzut oka na parkiet ogrzewa mi szklankę<br />
+Gdzie ta odwaga z kumplami potwierdzana w zakładach<br />
+Lecz jeśli spojrzy w tę stronę praktycznie przez moment<br />
+Tak jakby mi powie to jeszcze nie koniec<br />
+Przyznaję to szczerze, że mam słabość do Ciebie<br />
+Mam słabość do Ciebie.</li>
+</ol>
+<p><b>REF: x1</b></p>
+<ol start="3" style="list-style-type: decimal">
+<li>Ile razy widziałem Cię<br />
+Ile razy starałem się<br />
+Jesteś tam, ja nie wiem co robię<br />
+Zrób coś, bo zależy mi na Tobie.</li>
+</ol>
+<p><b>REF: x1</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Westlife - I Lay My Love on You
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=ZnOAK04tJhc">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Just a smile and the rain is gone<br />
+Can hardly believe it (yeah)<br />
+There's an angel standing next to me<br />
+Reaching for my heart<br />
+Just a smile and there's no way back<br />
+Can hardly believe it (yeah)<br />
+But there's an angel, she's calling me<br />
+Reaching for my heart<br />
+I know, that I'll be ok now<br />
+This time it's real</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+I lay my love on you<br />
+It's all I wanna do<br />
+Everytime I breathe I feel brand new<br />
+You open up my heart<br />
+Show me all your love, and walk right through<br />
+As I lay my love on you.
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>I was lost in a lonely place<br />
+Could hardly even believe it (yeah)<br />
+Holding on to yesterdays<br />
+Far, far too long<br />
+Now I believe its ok cause this time it's real.</li>
+</ol>
+<p><b>REF: x1</b></p>
+<ol start="3" style="list-style-type: decimal">
+<li>I never knew that love could fell soo good<br />
+Like once in a lifetime<br />
+You change my world</li>
+</ol>
+<p><b>REF: x2</b></p>
+</div>
+</div>
+</div>
+</div>
+<div class="song">
+<div class="page">
+<h1 class="song-title">
+Westlife - If I Let You go
+</h1>
+<div class="grids">
+
+</div>
+<div class="song-page">
+<div class="song-text">
+<p><a href="https://www.youtube.com/watch?v=7NrQei36fJk">Youtube link</a></p>
+<ol style="list-style-type: decimal">
+<li>Day after day, time pass away<br />
+And I just can't get you off my mind<br />
+Nobody knows, I hide it inside<br />
+I keep on searching, but I can't find<br />
+The courage to show, to letting you know<br />
+I've never felt so much love before<br />
+And once again, I'm thinking about<br />
+Taking the easy way out.</li>
+</ol>
+<blockquote class="chorus">
+<b>REF:</b><br />
+But if I let you go, I will never know<br />
+What my life would be, holding you close to me<br />
+Will I ever see, you smiling back at me<br />
+Oh yeah<br />
+How will I know<br />
+If I let you go
+</blockquote>
+<ol start="2" style="list-style-type: decimal">
+<li>Night after night, I hear myself say<br />
+Why can't this feeling just fade away<br />
+There's no-one like you, you speak to my heart<br />
+It's such a shame, we're worlds apart<br />
+I'm too shy to ask, I'm too proud to loose<br />
+But sooner or later, I gotta choose<br />
+And once again, I'm thinking about<br />
+Taking the easy way out.</li>
+</ol>
+<p><b>REF: x2</b></p>
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>

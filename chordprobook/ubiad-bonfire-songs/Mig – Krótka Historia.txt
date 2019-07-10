@@ -1,4 +1,4 @@
-{title: MIG - Krótka Historia}
+{title: Mig - Krótka Historia}
 #{st: MIG}
 
 
