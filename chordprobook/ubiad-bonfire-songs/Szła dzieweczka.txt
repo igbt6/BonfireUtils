@@ -1,0 +1,41 @@
+{title: Szła dzieweczka}
+{st: }
+
+
+<a href="https://www.youtube.com/watch?v=3x-q7qn6_pE">Youtube link</a>
+
+
+
+1. Szła dzieweczka do laseczka
+Do zielonego - ha, ha, ha
+Do zielonego - ha, ha, ha
+Do zielonego.
+Napotkała myśliweczka
+Bardzo szwarnego - ha, ha, ha
+Bardzo szwarnego - ha, ha, ha
+Bardzo szwarnego.
+
+{soc}
+<b>REF:</b> 
+Gdzie jest ta ulica, gdzie jest ten dom
+Gdzie jest ta dziewczyna
+Co kochom ją.
+Znalazłem ulicę, znalazłem dom
+Znalazłem dziewczynę
+Co kochom ją.
+(x2)
+{eoc}
+
+2. Myśliweczku, kochaneczku
+Bardzom ci rada - ha, ha, ha x3
+Dałabym ci chleba z masłem
+Alem go zjadła - ha, ha, ha x3
+
+<b>REF: x2</b>
+
+Jak żeś zjadła, to żeś zjadła
+To mi się nie chwal - ha, ha, ha x3
+Bo jak bym Cię w lesie spotkał
+To bym Cię zeprał - ha, ha, ha x3
+
+<b>REF: x2</b>
