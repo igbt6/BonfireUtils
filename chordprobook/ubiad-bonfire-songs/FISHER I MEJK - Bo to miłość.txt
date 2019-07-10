@@ -1,5 +1,5 @@
-{title: Bo to miłość}
-{st: FISHER I MEJK}
+{title: Fisher i Mejk - Bo to miłość}
+#{st: FISHER I MEJK}
 
 
 <a href="https://www.youtube.com/watch?v=tiPi8-BpxHc">Youtube link</a>

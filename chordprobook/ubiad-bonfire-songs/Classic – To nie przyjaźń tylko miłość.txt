@@ -1,5 +1,5 @@
-{title: To nie przyjaźń tylko miłość}
-{st: Classic}
+{title: Classic - To nie przyjaźń tylko miłość}
+#{st: Classic}
 
 
 <a href="https://www.youtube.com/watch?v=3uedlCyuT-8">Youtube link</a>

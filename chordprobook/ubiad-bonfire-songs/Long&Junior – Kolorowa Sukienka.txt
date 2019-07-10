@@ -1,5 +1,5 @@
-{title: Kolorowa Sukienka}
-{st: Long & Junior}
+{title: Long & Junior - Kolorowa Sukienka}
+#{st: Long & Junior}
 
 
 <a href="https://www.youtube.com/watch?v=777pdH-lfsc">Youtube link</a>

@@ -1,5 +1,5 @@
-{title: Najpiękniejsza}
-{st: Gesek}
+{title: Gesek - Najpiękniejsza}
+#{st: Gesek}
 
 
 <a href="https://www.youtube.com/watch?v=K097w-gdpEk">Youtube link</a>

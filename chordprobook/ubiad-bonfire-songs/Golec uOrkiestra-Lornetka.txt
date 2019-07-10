@@ -1,5 +1,5 @@
-{title:  Lornetka}
-{st: Golec uOrkiestra}
+{title:  Golec uOrkiestra - Lornetka}
+#{st: Golec uOrkiestra}
 
 
 <a href="https://www.youtube.com/watch?v=8FH0RgEIZ1E">Youtube link</a>

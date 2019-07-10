@@ -1,5 +1,5 @@
-{title: Mogliśmy}
-{st: VERBA}
+{title: Verba - Mogliśmy}
+#{st: VERBA}
 
 <a href="https://www.youtube.com/watch?v=Ev3M1b3W66M">Youtube link</a>
 

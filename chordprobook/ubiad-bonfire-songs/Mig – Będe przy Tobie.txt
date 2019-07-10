@@ -1,6 +1,5 @@
-{title: Będe przy Tobie}
-{st: MIG}
-
+{title: MIG - Będe przy Tobie}
+#{st: MIG}
 
 <a href="https://www.youtube.com/watch?v=Y7ZTmRUFttk">Youtube link</a>
 

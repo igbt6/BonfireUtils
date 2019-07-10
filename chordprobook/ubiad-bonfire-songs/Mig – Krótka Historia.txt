@@ -1,5 +1,5 @@
-{title: Krótka Historia}
-{st: MIG}
+{title: MIG - Krótka Historia}
+#{st: MIG}
 
 
 <a href="https://www.youtube.com/watch?v=ItQSike7sGY">Youtube link</a>

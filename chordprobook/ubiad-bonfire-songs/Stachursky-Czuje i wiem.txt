@@ -1,5 +1,5 @@
-{title:  Czuje i wiem}
-{st: STACHURSKY}
+{title:  Stachurski - Czuje i wiem}
+#{st: STACHURSKY}
 
 
 <a href="https://www.youtube.com/watch?v=bdpqNi2R59Q">Youtube link</a>

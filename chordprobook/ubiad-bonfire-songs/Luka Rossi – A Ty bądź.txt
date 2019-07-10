@@ -1,5 +1,5 @@
-{title: A Ty bądź}
-{st: Luka Rossi}
+{title: Luka Rossi - A Ty bądź}
+#{st: Luka Rossi}
 
 
 <a href="https://www.youtube.com/watch?v=h2oJ5C6K8Gg">Youtube link</a>

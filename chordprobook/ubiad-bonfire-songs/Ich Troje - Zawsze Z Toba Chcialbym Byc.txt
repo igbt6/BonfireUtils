@@ -1,5 +1,5 @@
-{title:  Zawsze Z Toba Chcialbym Byc}
-{st: Ich Troje}
+{title:  Ich Troje - Zawsze Z Toba Chcialbym Byc}
+#{st: Ich Troje}
 
 
 <a href="https://www.youtube.com/watch?v=Wp57PXBB7Xg">Youtube link</a>

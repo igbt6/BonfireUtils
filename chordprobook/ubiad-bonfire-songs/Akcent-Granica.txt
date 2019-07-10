@@ -1,5 +1,5 @@
-{title: Granica}
-{st: Akcent}
+{title: Akcent - Granica}
+#{st: Akcent}
 
 
 <a href="https://www.youtube.com/watch?v=nqJy_sva8ms">Youtube link</a>

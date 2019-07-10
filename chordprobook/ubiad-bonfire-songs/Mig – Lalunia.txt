@@ -1,5 +1,5 @@
-{title: Lalunia}
-{st: MIG}
+{title: MIG - Lalunia}
+#{st: MIG}
 
 
 <a href="https://www.youtube.com/watch?v=e3B3OAEiYF8">Youtube link</a>

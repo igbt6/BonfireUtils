@@ -1,5 +1,5 @@
-{title: Łobuz kocha najbardziej}
-{st: Łobuzy & Piękny Dawid}
+{title: Łobuzy - Łobuz kocha najbardziej}
+#{st: Łobuzy & Piękny Dawid}
 
 
 <a href="https://www.youtube.com/watch?v=105WC1U_NdU">Youtube link</a>

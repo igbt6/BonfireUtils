@@ -1,5 +1,5 @@
-{title: One Step Forward (Two Steps Back)}
-{st: Desert Rose Band}
+{title: Desert Rose Band - One Step Forward}
+#{st: Desert Rose Band}
 
 
 <a href="https://www.youtube.com/watch?v=Jfrt9v_56MU">Youtube link</a>

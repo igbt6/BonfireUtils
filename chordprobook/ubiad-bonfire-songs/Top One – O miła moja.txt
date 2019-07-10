@@ -1,5 +1,5 @@
-{title: O miła moja}
-{st: Top One}
+{title: Top One - O miła moja}
+#{st: Top One}
 
 
 <a href="https://www.youtube.com/watch?v=L7Foik9lQmw">Youtube link</a>

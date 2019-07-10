@@ -1,5 +1,5 @@
-{title:  Powiedz}
-{st: ICH TROJE}
+{title:  Ich Troje - Powiedz}
+#{st: ICH TROJE}
 
 
 <a href="https://www.youtube.com/watch?v=j0U4lrfzv6U">Youtube link</a>

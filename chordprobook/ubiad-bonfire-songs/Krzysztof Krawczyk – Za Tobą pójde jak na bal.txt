@@ -1,5 +1,5 @@
-{title: Za Tobą pójdę jak na bal}
-{st: Krzysztof Krawczyk}
+{title: Krzysztof Krawczyk - Za Tobą pójdę jak na bal}
+#{st: Krzysztof Krawczyk}
 
 
 <a href="https://www.youtube.com/watch?v=uP6mSO1j-9Q">Youtube link</a>

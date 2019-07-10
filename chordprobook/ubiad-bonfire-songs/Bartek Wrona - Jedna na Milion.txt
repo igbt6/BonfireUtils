@@ -1,5 +1,5 @@
-{title:  Jedna na milion}
-{st: Bartek Wrona}
+{title:  Bartek Wrona - Jedna na milion}
+#{st: Bartek Wrona}
 
 
 <a href="https://www.youtube.com/watch?v=FJgIqLnZHw4">Youtube link</a>

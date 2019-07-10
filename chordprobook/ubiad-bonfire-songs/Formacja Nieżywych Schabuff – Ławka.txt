@@ -1,5 +1,5 @@
-{title:  Ławka}
-{st: Formacja Nieżywych Schabuff}
+{title:  Formacja Nieżywych Schabuff - Ławka}
+#{st: Formacja Nieżywych Schabuff}
 
 
 <a href="https://www.youtube.com/watch?v=JVd1AofNp_4">Youtube link</a>

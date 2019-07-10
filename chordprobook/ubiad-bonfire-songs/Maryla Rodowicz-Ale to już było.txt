@@ -1,5 +1,5 @@
-{title: Ale to już było}
-{st: Maryla Rodowicz}
+{title: Maryla Rodowicz - Ale to już było}
+#{st: Maryla Rodowicz}
 
 
 <a href="https://www.youtube.com/watch?v=FKZAj2UHzRs">Youtube link</a>

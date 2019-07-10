@@ -1,5 +1,5 @@
-{title: Jesteś szalona}
-{st: Boys}
+{title: Boys - Jesteś szalona}
+#{st: Boys}
 
 
 <a href="https://www.youtube.com/watch?v=rAz93ck6cRk">Youtube link</a>

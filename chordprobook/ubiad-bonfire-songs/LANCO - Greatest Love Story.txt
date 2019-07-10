@@ -1,5 +1,5 @@
-{title: Greatest Love Story }
-{st: LANCO}
+{title: Lanco - Greatest Love Story }
+#{st: LANCO}
 
 
 <a href="https://www.youtube.com/watch?v=aHl0tlUYDBI">Youtube link</a>

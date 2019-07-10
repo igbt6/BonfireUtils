@@ -1,5 +1,5 @@
-{title: If You Ever Get Lonely}
-{st: John Waite}
+{title: John Waite - If You Ever Get Lonely}
+# {st: John Waite}
 
 
 <a href="https://www.youtube.com/watch?v=HkfUXx8FAgA">Youtube link</a>

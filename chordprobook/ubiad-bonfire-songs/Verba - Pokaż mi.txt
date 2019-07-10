@@ -1,5 +1,5 @@
-{title: Pokaż mi}
-{st: Verba}
+{title: Verba - Pokaż mi}
+#{st: Verba}
 
 
 <a href="https://www.youtube.com/watch?v=pfAly5eiA6Q">Youtube link</a>

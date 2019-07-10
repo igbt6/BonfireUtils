@@ -1,6 +1,5 @@
-Wietrze wiej
-{title:  Wietrze wiej}
-{st: Kapela Górole}
+{title: Kapela Górole - Wietrze wiej}
+#{st: Kapela Górole}
 
 
 <a href="https://www.youtube.com/watch?v=lpx-DYthSZA">Youtube link</a>

@@ -1,5 +1,5 @@
-{title: Bez Ciebie świat }
-{st: Verba}
+{title: Verba - Bez Ciebie świat }
+#{st: Verba}
 
 
 <a href="https://www.youtube.com/watch?v=_SI4PeK4s7s">Youtube link</a>

@@ -1,5 +1,5 @@
-{title: Damn Drunk}
-{st: Ronnie Dunn}
+{title: Ronnie Dunn - Damn Drunk}
+#{st: Ronnie Dunn}
 
 
 <a href="https://www.youtube.com/watch?v=DQfB4z0vMBY">Youtube link</a>

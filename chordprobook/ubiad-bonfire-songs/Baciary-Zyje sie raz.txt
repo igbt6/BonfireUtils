@@ -1,5 +1,5 @@
-{title: Zyje sie raz}
-{st: Baciary}
+{title: Baciary - Żyje się raz}
+#{st: Baciary}
 
 
 <a href="https://www.youtube.com/watch?v=J-P81cf-fwE">Youtube link</a>

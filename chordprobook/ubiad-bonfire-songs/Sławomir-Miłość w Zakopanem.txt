@@ -1,5 +1,5 @@
-{title:  Miłość w Zakopanem}
-{st: Sławomir}
+{title: Sławomir - Miłość w Zakopanem}
+#{st: Sławomir}
 
 
 <a href="https://www.youtube.com/watch?v=n2hJA78YuWw">Youtube link</a>

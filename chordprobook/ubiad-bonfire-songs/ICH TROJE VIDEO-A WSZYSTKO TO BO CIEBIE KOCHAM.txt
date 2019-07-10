@@ -1,5 +1,5 @@
-{title:  A wszystko to bo Ciebie kocham}
-{st: ICH TROJE}
+{title:  Ich Troje - A wszystko to bo Ciebie kocham}
+#{st: ICH TROJE}
 
 
 <a href="https://www.youtube.com/watch?v=0EcOyWc5Hkk">Youtube link</a>

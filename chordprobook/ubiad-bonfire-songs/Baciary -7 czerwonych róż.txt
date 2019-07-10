@@ -1,5 +1,5 @@
-{title:  Siedem Czerwonych Róż}
-{st: Baciary}
+{title:  Baciary - Siedem Czerwonych Róż}
+#{st: Baciary}
 
 
 <a href="https://www.youtube.com/watch?v=nhcNLkosnz0">Youtube link</a>

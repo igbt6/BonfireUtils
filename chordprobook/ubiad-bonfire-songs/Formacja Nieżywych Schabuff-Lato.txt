@@ -1,5 +1,5 @@
-{title: Lato}
-{st: Formacja Nieżywych Schabuff}
+{title: Formacja Nieżywych Schabuff - Lato}
+#{st: Formacja Nieżywych Schabuff}
 
 
 <a href="https://www.youtube.com/watch?v=eaHbjnXItXc">Youtube link</a>

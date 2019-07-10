@@ -354,7 +354,6 @@ class cp_song:
                 instrument.load_chord_chart(lefty=self.lefty)
                 self.grids = instrument.chart
 
-
             if  self.local_instruments != None and instrument_name in self.local_instrument_names:
                 self.local_grids = self.local_instruments.get_instrument_by_name(instrument_name).chart
 
@@ -521,7 +520,7 @@ class cp_song:
         page_count = 0
         for page in song_pages:
             if page_count == 0:
-                title = "<h1 class='song-title'>%s</h1>" % "oooo"#self.formatted_title
+                title = "<h1 class='song-title'>%s</h1>" % self.formatted_title
             else:
                 title = ""
             if len(chords_by_page) > page_count:

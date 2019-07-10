@@ -1,5 +1,5 @@
-{title: O Tobie kochana}
-{st: Milano}
+{title: Milano - O Tobie kochana}
+#{st: Milano}
 
 
 <a href="https://www.youtube.com/watch?v=pIU4UP53hTc">Youtube link</a>

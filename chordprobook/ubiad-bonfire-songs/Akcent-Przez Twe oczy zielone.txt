@@ -1,5 +1,5 @@
-{title: Przez Twe oczy zielone}
-{st: Akcent}
+{title: Akcent - Przez Twe oczy zielone}
+#{st: Akcent}
 
 
 <a href="https://www.youtube.com/watch?v=cxtnot8lY4U">Youtube link</a>

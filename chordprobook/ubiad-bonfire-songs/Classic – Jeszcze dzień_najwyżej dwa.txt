@@ -1,5 +1,5 @@
-{title: Jeszcze dzień, najwyżej dwa}
-{st: Classic}
+{title: Classic - Jeszcze dzień}
+#{st: Classic}
 
 
 <a href="https://www.youtube.com/watch?v=0NVUi6nRc7s">Youtube link</a>

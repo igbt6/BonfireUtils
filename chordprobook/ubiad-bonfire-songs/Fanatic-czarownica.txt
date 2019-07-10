@@ -1,5 +1,5 @@
-{title: Czarownica}
-{st: Fanatic}
+{title: Fanatic - Czarownica}
+#{st: Fanatic}
 
 
 <a href="https://www.youtube.com/watch?v=jh6UE2K4zKY">Youtube link</a>

@@ -1,5 +1,5 @@
-{title: Let Your Love Flow}
-{st: Bellamy Brothers}
+{title: Bellamy Brothers - Let Your Love Flow}
+#{st: Bellamy Brothers}
 
 
 <a href="https://www.youtube.com/watch?v=J4Bl_VQ2inM">Youtube link</a>

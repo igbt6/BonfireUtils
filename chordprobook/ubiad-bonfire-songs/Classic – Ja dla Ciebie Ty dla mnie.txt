@@ -1,5 +1,5 @@
-{title: Ja dla Ciebie Ty dla mnie}
-{st: Classic}
+{title: Classic - Ja dla Ciebie Ty dla mnie}
+#{st: Classic}
 
 
 <a href="https://www.youtube.com/watch?v=0Z8TxWZ6B8g">Youtube link</a>

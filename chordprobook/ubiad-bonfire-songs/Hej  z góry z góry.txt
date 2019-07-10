@@ -1,4 +1,4 @@
-{title: Hej  z góry, z góry}
+{title: Hej z góry, z góry}
 {st: }
 
 

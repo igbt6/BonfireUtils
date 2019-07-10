@@ -1,5 +1,5 @@
-{title: Niezwyczajna miłość}
-{st: Seventeen}
+{title: Seventeen - Niezwyczajna miłość}
+# {st: Seventeen}
 
 
 <a href="https://www.youtube.com/watch?v=aNFyUc6etx0">Youtube link</a>

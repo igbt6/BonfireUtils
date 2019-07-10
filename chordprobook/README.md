@@ -296,3 +296,9 @@ And you'll see this:
 
     ```mksong -b samples/sample_versioned. book.txt ```
 	```mksong -b samples/sample_auto_versioned. book.txt ```
+
+* To create Ubiad bonfire songbook:
+```
+    cd chordbook
+    ./mksong -a --file-stem=śpiewnik-ognisko-ubiad-2019T --title="Śpiewnik - Ognisko Ubiad 2019"  ubiad-bonfire-songs/*.txt
+```

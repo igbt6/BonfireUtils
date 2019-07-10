@@ -1,5 +1,5 @@
-{title:  Wymarzona}
-{st: MIG}
+{title: MIG - Wymarzona}
+#{st: MIG}
 
 
 <a href="https://www.youtube.com/watch?v=GzjOboh588Y">Youtube link</a>
