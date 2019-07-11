@@ -71,7 +71,7 @@ class TOC:
         page_count = start_page +  self.target_num_pages
         for song  in book.sets:
             if not song.blank:
-                sets.append("Set: %s <span style='float:right'>%s</span>    " % ( song.title, str(page_count)))
+                sets.append("Set: %s <span style='float:right'>%s</span>" % (song.title, str(page_count)))
             page_count += song.pages
 
 
@@ -81,10 +81,10 @@ class TOC:
             page_count += 1
 
         for song in book.songs:
-            if not song.blank:
-                song_count += 1
-                entries.append("%s %s <span style='float:right'> %s</span>    " % (song.title, song.get_key_string(), str(page_count)))
-                page_count += song.pages
+            #if not song.blank:
+            song_count += 1
+            entries.append("<p>%s %s <span style='float:right'> %s</span> <a href='#P%d' style='text-decoration: none; color : #000;'</a> </p>" % (song.title, song.get_key_string(), str(page_count), page_count))
+            page_count += song.pages
 
         entries.sort(key= lambda title: re.sub("(?i)^(the|a|\(.*?\)) ", "", title))
         entries = sets + entries
@@ -471,7 +471,7 @@ class cp_song:
             pypandoc.convert(self.to_final_md(), "html", format="markdown", outputfile=html_path, extra_args=xtra)
             pypandoc.convert(html_path, ext, format="html", outputfile=word_path, extra_args=xtra)
 
-    def to_html(self):
+    def to_html(self, page_number=0):
         #TODO STANDALONE
 
         # Deal with chords
@@ -520,7 +520,7 @@ class cp_song:
         page_count = 0
         for page in song_pages:
             if page_count == 0:
-                title = "<h1 class='song-title'>%s</h1>" % self.formatted_title
+                title = "<h1 class='song-title' id='P%d'>%s</h1>" % (page_number, self.formatted_title)
             else:
                 title = ""
             if len(chords_by_page) > page_count:
@@ -723,8 +723,9 @@ class cp_song_book:
         # TODO - only generate this if HTML 
         
         # Need to run this whatever the output_file# Now add formatted songs to output in the right order
-        for song in self.songs:
-            all_songs += song.to_html()
+        for i, song in enumerate(self.songs):
+            all_songs += song.to_html(i+3) # TODO 3 - offset temporary hack
+            #print(len(all_songs))
             
         title = self.title + title_suffix + " " + version_string
         if args['html']:
