@@ -83,7 +83,7 @@ class TOC:
         for song in book.songs:
             #if not song.blank:
             song_count += 1
-            entries.append("<p>%s %s <span style='float:right'> %s</span> <a href='#P%d' style='text-decoration: none; color : #000;'</a> </p>" % (song.title, song.get_key_string(), str(page_count), page_count))
+            entries.append("<h2>%s %s <span style='float:right'> %s</span> <a href='#P%d' style='text-decoration: none; color : #000;'</a> </h2>" % (song.title, song.get_key_string(), str(page_count), page_count))
             page_count += song.pages
 
         entries.sort(key= lambda title: re.sub("(?i)^(the|a|\(.*?\)) ", "", title))
