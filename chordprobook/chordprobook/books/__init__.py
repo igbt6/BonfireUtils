@@ -69,22 +69,23 @@ class TOC:
 
 
         page_count = start_page +  self.target_num_pages
-        for song  in book.sets:
-            if not song.blank:
-                sets.append("Set: %s <span style='float:right'>%s</span>" % (song.title, str(page_count)))
-            page_count += song.pages
+        #for song  in book.sets:
+            #if not song.blank:
+        #    sets.append("Set: %s <span style='float:right'>%s</span> <a href='#P%d' style='text-decoration:none; color:#000; font-size:25px;'</a>" % (song.title, str(page_count), page_count))
+        #    page_count += song.pages
 
 
         # Make sure we don't have a song on the back of a setlist (so you can rip out the setlist)
-        if len(book.sets) > 0 and  (self.target_num_pages + len(book.sets)) % 2 == 0:
-            book.songs.insert(0, cp_song("", title="", blank=True))
-            page_count += 1
+        # if len(book.sets) > 0 and  (self.target_num_pages + len(book.sets)) % 2 == 0:
+        #     book.songs.insert(0, cp_song("", title="", blank=True))
+        #     page_count += 1
 
         for song in book.songs:
             #if not song.blank:
             song_count += 1
-            entries.append("<h2>%s %s <span style='float:right'> %s</span> <a href='#P%d' style='text-decoration: none; color : #000;'</a> </h2>" % (song.title, song.get_key_string(), str(page_count), page_count))
+            entries.append("<h1> <p>%s %s <span style='float:right';  font-size:20px;> %s</span> <a href='#P%d' style='text-decoration:none; color:#000; font-size:27px;'</a> </p></h1>" % (song.title, song.get_key_string(), str(page_count), page_count))
             page_count += song.pages
+            print(song.title)
 
         entries.sort(key= lambda title: re.sub("(?i)^(the|a|\(.*?\)) ", "", title))
         entries = sets + entries
@@ -93,8 +94,6 @@ class TOC:
             self.pages = chunked(entries,self.target_num_pages)
         else:
             self.pages = [entries]
-
-
 
 
 
